@@ -1,0 +1,4720 @@
+[
+  {
+    "enabled": true,
+    "id": "status_returning",
+    "group": "status",
+    "type": "boolean_flag",
+    "params": {
+      "field": "returning"
+    },
+    "label": "Returning Player",
+    "eligible_us_castaway_count": 121,
+    "eligible_castaway_count": 185
+  },
+  {
+    "enabled": true,
+    "id": "status_one_time_player",
+    "group": "status",
+    "type": "boolean_flag_equals",
+    "params": {
+      "field": "returning",
+      "value": false
+    },
+    "label": "One-Time Player",
+    "eligible_us_castaway_count": 630,
+    "eligible_castaway_count": 1013
+  },
+  {
+    "enabled": true,
+    "id": "status_played_three_plus_seasons",
+    "group": "status",
+    "type": "boolean_flag",
+    "params": {
+      "field": "played_three_plus_seasons"
+    },
+    "label": "Played 3+ Seasons",
+    "eligible_us_castaway_count": 31,
+    "eligible_castaway_count": 38
+  },
+  {
+    "enabled": true,
+    "id": "gender_male",
+    "group": "status",
+    "type": "gender_equals",
+    "params": {
+      "gender": "male"
+    },
+    "label": "Man",
+    "eligible_us_castaway_count": 373,
+    "eligible_castaway_count": 596
+  },
+  {
+    "enabled": true,
+    "id": "gender_female",
+    "group": "status",
+    "type": "gender_equals",
+    "params": {
+      "gender": "female"
+    },
+    "label": "Woman",
+    "eligible_us_castaway_count": 376,
+    "eligible_castaway_count": 598
+  },
+  {
+    "enabled": true,
+    "id": "placement_winner",
+    "group": "placement",
+    "type": "placement_equals",
+    "params": {
+      "place": 1
+    },
+    "label": "Sole Survivor",
+    "eligible_us_castaway_count": 48,
+    "eligible_castaway_count": 73
+  },
+  {
+    "enabled": true,
+    "id": "placement_runner_up",
+    "group": "placement",
+    "type": "placement_equals",
+    "params": {
+      "place": 2
+    },
+    "label": "Runner-Up",
+    "eligible_us_castaway_count": 56,
+    "eligible_castaway_count": 84
+  },
+  {
+    "enabled": true,
+    "id": "placement_third",
+    "group": "placement",
+    "type": "placement_equals",
+    "params": {
+      "place": 3
+    },
+    "label": "Third Place",
+    "eligible_us_castaway_count": 43,
+    "eligible_castaway_count": 66
+  },
+  {
+    "enabled": true,
+    "id": "placement_merge",
+    "group": "placement",
+    "type": "season_list_nonempty",
+    "params": {
+      "field": "made_merge"
+    },
+    "label": "Made the Merge",
+    "tooltip": "Reached the merge. The modern 'Mergatory' merge episode counts as making the merge.",
+    "eligible_us_castaway_count": 472,
+    "eligible_castaway_count": 728
+  },
+  {
+    "enabled": true,
+    "id": "placement_jury",
+    "group": "placement",
+    "type": "season_list_nonempty",
+    "params": {
+      "field": "made_jury"
+    },
+    "label": "On the Jury",
+    "eligible_us_castaway_count": 372,
+    "eligible_castaway_count": 562
+  },
+  {
+    "enabled": true,
+    "id": "placement_ftc",
+    "group": "placement",
+    "type": "season_list_nonempty",
+    "params": {
+      "field": "made_ftc"
+    },
+    "label": "Made Final Tribal Council",
+    "eligible_us_castaway_count": 125,
+    "eligible_castaway_count": 183
+  },
+  {
+    "enabled": true,
+    "id": "exit_quit",
+    "group": "exit",
+    "type": "season_list_nonempty",
+    "params": {
+      "field": "quit"
+    },
+    "label": "Quit",
+    "eligible_us_castaway_count": 19,
+    "eligible_castaway_count": 30
+  },
+  {
+    "enabled": true,
+    "id": "exit_medevac",
+    "group": "exit",
+    "type": "season_list_nonempty",
+    "params": {
+      "field": "medevac"
+    },
+    "label": "Medevaced",
+    "eligible_us_castaway_count": 21,
+    "eligible_castaway_count": 29
+  },
+  {
+    "enabled": true,
+    "id": "immunity_1plus",
+    "group": "challenges",
+    "type": "immunity_wins_count",
+    "params": {
+      "min": 1
+    },
+    "label": "1+ Individual Immunity Wins",
+    "eligible_us_castaway_count": 226,
+    "eligible_castaway_count": 355
+  },
+  {
+    "enabled": true,
+    "id": "firemaking_win",
+    "group": "firemaking",
+    "type": "firemaking_result",
+    "params": {
+      "result": "win"
+    },
+    "label": "Won Firemaking",
+    "eligible_us_castaway_count": 23,
+    "eligible_castaway_count": 31
+  },
+  {
+    "enabled": true,
+    "id": "firemaking_loss",
+    "group": "firemaking",
+    "type": "firemaking_result",
+    "params": {
+      "result": "loss"
+    },
+    "label": "Lost Firemaking",
+    "eligible_us_castaway_count": 22,
+    "eligible_castaway_count": 29
+  },
+  {
+    "enabled": true,
+    "id": "juror_voted_winner",
+    "group": "voting",
+    "type": "season_list_nonempty",
+    "params": {
+      "field": "jury_voted_winner"
+    },
+    "label": "As a Juror, Voted for the Winner",
+    "eligible_us_castaway_count": 285,
+    "eligible_castaway_count": 437
+  },
+  {
+    "enabled": true,
+    "id": "juror_not_voted_winner",
+    "group": "voting",
+    "type": "season_list_nonempty",
+    "params": {
+      "field": "jury_voted_not_winner"
+    },
+    "label": "As a Juror, Did Not Vote for the Winner",
+    "eligible_us_castaway_count": 101,
+    "eligible_castaway_count": 141
+  },
+  {
+    "enabled": true,
+    "id": "age_oldest_player",
+    "group": "age",
+    "type": "season_list_nonempty",
+    "params": {
+      "field": "oldest_player"
+    },
+    "label": "Oldest Player on Their Season",
+    "eligible_us_castaway_count": 51,
+    "eligible_castaway_count": 79
+  },
+  {
+    "enabled": true,
+    "id": "age_youngest_player",
+    "group": "age",
+    "type": "season_list_nonempty",
+    "params": {
+      "field": "youngest_player"
+    },
+    "label": "Youngest Player on Their Season",
+    "eligible_us_castaway_count": 63,
+    "eligible_castaway_count": 94
+  },
+  {
+    "enabled": true,
+    "id": "age_played_as_teen",
+    "group": "age",
+    "type": "age_bracket",
+    "params": {
+      "min": 0,
+      "max": 19
+    },
+    "label": "Played as a Teen",
+    "eligible_us_castaway_count": 10,
+    "eligible_castaway_count": 12
+  },
+  {
+    "enabled": true,
+    "id": "age_played_in_20s",
+    "group": "age",
+    "type": "age_bracket",
+    "params": {
+      "min": 20,
+      "max": 29
+    },
+    "label": "Played in Their 20s",
+    "eligible_us_castaway_count": 360,
+    "eligible_castaway_count": 548
+  },
+  {
+    "enabled": true,
+    "id": "age_played_in_30s",
+    "group": "age",
+    "type": "age_bracket",
+    "params": {
+      "min": 30,
+      "max": 39
+    },
+    "label": "Played in Their 30s",
+    "eligible_us_castaway_count": 241,
+    "eligible_castaway_count": 418
+  },
+  {
+    "enabled": true,
+    "id": "age_played_in_40s",
+    "group": "age",
+    "type": "age_bracket",
+    "params": {
+      "min": 40,
+      "max": 49
+    },
+    "label": "Played in Their 40s",
+    "eligible_us_castaway_count": 137,
+    "eligible_castaway_count": 206
+  },
+  {
+    "enabled": true,
+    "id": "age_played_in_50s",
+    "group": "age",
+    "type": "age_bracket",
+    "params": {
+      "min": 50,
+      "max": 59
+    },
+    "label": "Played in Their 50s",
+    "eligible_us_castaway_count": 56,
+    "eligible_castaway_count": 88
+  },
+  {
+    "enabled": true,
+    "id": "age_played_in_60s",
+    "group": "age",
+    "type": "age_bracket",
+    "params": {
+      "min": 60,
+      "max": 69
+    },
+    "label": "Played in Their 60s",
+    "eligible_us_castaway_count": 10,
+    "eligible_castaway_count": 14
+  },
+  {
+    "enabled": true,
+    "id": "voting_no_tribals_before_merge",
+    "group": "voting",
+    "type": "season_list_nonempty",
+    "params": {
+      "field": "no_tribals_before_merge"
+    },
+    "label": "No Tribals Before Merge (Single Season)",
+    "tooltip": "Made the merge in a season without attending any pre-merge tribal council. The modern 'Mergatory' tribal counts as the merge, not a pre-merge one.",
+    "eligible_us_castaway_count": 47,
+    "eligible_castaway_count": 47
+  },
+  {
+    "enabled": true,
+    "id": "voting_no_tribals_before_merge_career",
+    "group": "voting",
+    "type": "season_list_covering_all_seasons",
+    "params": {
+      "field": "no_tribals_before_merge"
+    },
+    "label": "No Tribals Before Merge (Career)",
+    "tooltip": "Never attended a pre-merge tribal council in any season played. The modern 'Mergatory' tribal counts as the merge, not a pre-merge one.",
+    "eligible_us_castaway_count": 34,
+    "eligible_castaway_count": 34
+  },
+  {
+    "enabled": true,
+    "id": "confessional_highest_season",
+    "group": "confessionals",
+    "type": "season_list_nonempty",
+    "params": {
+      "field": "highest_confessional_count"
+    },
+    "label": "Highest Confessional Count in Their Season",
+    "eligible_us_castaway_count": 47,
+    "eligible_castaway_count": 73
+  },
+  {
+    "enabled": true,
+    "id": "confessional_lowest_season",
+    "group": "confessionals",
+    "type": "season_list_nonempty",
+    "params": {
+      "field": "lowest_confessional_count"
+    },
+    "label": "Lowest Confessional Count in Their Season",
+    "eligible_us_castaway_count": 62,
+    "eligible_castaway_count": 98
+  },
+  {
+    "enabled": true,
+    "id": "auction_item_won",
+    "group": "events",
+    "type": "season_list_nonempty",
+    "params": {
+      "field": "auction_item_won"
+    },
+    "label": "Won an Auction Item",
+    "eligible_us_castaway_count": 117,
+    "eligible_castaway_count": 209
+  },
+  {
+    "enabled": true,
+    "id": "journey_went",
+    "group": "events",
+    "type": "season_list_nonempty",
+    "params": {
+      "field": "journeys"
+    },
+    "label": "Went on a Journey",
+    "eligible_us_castaway_count": 81,
+    "eligible_castaway_count": 81
+  },
+  {
+    "enabled": true,
+    "id": "journey_lost_vote",
+    "group": "events",
+    "type": "season_list_nonempty",
+    "params": {
+      "field": "journey_lost_vote"
+    },
+    "label": "Lost Their Vote on a Journey",
+    "eligible_us_castaway_count": 23,
+    "eligible_castaway_count": 23
+  },
+  {
+    "enabled": true,
+    "id": "journey_gained_advantage",
+    "group": "events",
+    "type": "season_list_nonempty",
+    "params": {
+      "field": "journey_gained_advantage"
+    },
+    "label": "Gained an Advantage on a Journey",
+    "eligible_us_castaway_count": 32,
+    "eligible_castaway_count": 32
+  },
+  {
+    "enabled": true,
+    "id": "season_US50",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US50"
+    },
+    "label": "Season: In the Hands of the Fans (50)",
+    "eligible_us_castaway_count": 24,
+    "eligible_castaway_count": 24
+  },
+  {
+    "enabled": true,
+    "id": "season_US49",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US49"
+    },
+    "label": "Season 49",
+    "eligible_us_castaway_count": 18,
+    "eligible_castaway_count": 18
+  },
+  {
+    "enabled": true,
+    "id": "season_US48",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US48"
+    },
+    "label": "Season 48",
+    "eligible_us_castaway_count": 18,
+    "eligible_castaway_count": 18
+  },
+  {
+    "enabled": true,
+    "id": "season_US47",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US47"
+    },
+    "label": "Season 47",
+    "eligible_us_castaway_count": 18,
+    "eligible_castaway_count": 18
+  },
+  {
+    "enabled": true,
+    "id": "season_US46",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US46"
+    },
+    "label": "Season 46",
+    "eligible_us_castaway_count": 18,
+    "eligible_castaway_count": 18
+  },
+  {
+    "enabled": true,
+    "id": "season_US45",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US45"
+    },
+    "label": "Season 45",
+    "eligible_us_castaway_count": 18,
+    "eligible_castaway_count": 18
+  },
+  {
+    "enabled": true,
+    "id": "season_US44",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US44"
+    },
+    "label": "Season 44",
+    "eligible_us_castaway_count": 18,
+    "eligible_castaway_count": 18
+  },
+  {
+    "enabled": true,
+    "id": "season_US43",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US43"
+    },
+    "label": "Season 43",
+    "eligible_us_castaway_count": 18,
+    "eligible_castaway_count": 18
+  },
+  {
+    "enabled": true,
+    "id": "season_US42",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US42"
+    },
+    "label": "Season 42",
+    "eligible_us_castaway_count": 18,
+    "eligible_castaway_count": 18
+  },
+  {
+    "enabled": true,
+    "id": "season_US41",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US41"
+    },
+    "label": "Season 41",
+    "eligible_us_castaway_count": 18,
+    "eligible_castaway_count": 18
+  },
+  {
+    "enabled": true,
+    "id": "season_US40",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US40"
+    },
+    "label": "Season: Winners at War (40)",
+    "eligible_us_castaway_count": 20,
+    "eligible_castaway_count": 20
+  },
+  {
+    "enabled": true,
+    "id": "season_US39",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US39"
+    },
+    "label": "Season: Island of the Idols (39)",
+    "eligible_us_castaway_count": 20,
+    "eligible_castaway_count": 20
+  },
+  {
+    "enabled": true,
+    "id": "season_US38",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US38"
+    },
+    "label": "Season: Edge of Extinction (38)",
+    "eligible_us_castaway_count": 18,
+    "eligible_castaway_count": 18
+  },
+  {
+    "enabled": true,
+    "id": "season_US37",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US37"
+    },
+    "label": "Season: David vs. Goliath (37)",
+    "eligible_us_castaway_count": 20,
+    "eligible_castaway_count": 20
+  },
+  {
+    "enabled": true,
+    "id": "season_US36",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US36"
+    },
+    "label": "Season: Ghost Island (36)",
+    "eligible_us_castaway_count": 20,
+    "eligible_castaway_count": 20
+  },
+  {
+    "enabled": true,
+    "id": "season_US35",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US35"
+    },
+    "label": "Season: Heroes vs. Healers vs. Hustlers (35)",
+    "eligible_us_castaway_count": 18,
+    "eligible_castaway_count": 18
+  },
+  {
+    "enabled": true,
+    "id": "season_US34",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US34"
+    },
+    "label": "Season: Game Changers (34)",
+    "eligible_us_castaway_count": 20,
+    "eligible_castaway_count": 20
+  },
+  {
+    "enabled": true,
+    "id": "season_US33",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US33"
+    },
+    "label": "Season: Millennials vs. Gen X (33)",
+    "eligible_us_castaway_count": 20,
+    "eligible_castaway_count": 20
+  },
+  {
+    "enabled": true,
+    "id": "season_US32",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US32"
+    },
+    "label": "Season: Kaoh Rong (32)",
+    "eligible_us_castaway_count": 18,
+    "eligible_castaway_count": 18
+  },
+  {
+    "enabled": true,
+    "id": "season_US31",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US31"
+    },
+    "label": "Season: Cambodia (31)",
+    "eligible_us_castaway_count": 20,
+    "eligible_castaway_count": 20
+  },
+  {
+    "enabled": true,
+    "id": "season_US30",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US30"
+    },
+    "label": "Season: Worlds Apart (30)",
+    "eligible_us_castaway_count": 18,
+    "eligible_castaway_count": 18
+  },
+  {
+    "enabled": true,
+    "id": "season_US29",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US29"
+    },
+    "label": "Season: San Juan del Sur (29)",
+    "eligible_us_castaway_count": 18,
+    "eligible_castaway_count": 18
+  },
+  {
+    "enabled": true,
+    "id": "season_US28",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US28"
+    },
+    "label": "Season: Cagayan (28)",
+    "eligible_us_castaway_count": 18,
+    "eligible_castaway_count": 18
+  },
+  {
+    "enabled": true,
+    "id": "season_US27",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US27"
+    },
+    "label": "Season: Blood vs. Water (27)",
+    "eligible_us_castaway_count": 20,
+    "eligible_castaway_count": 20
+  },
+  {
+    "enabled": true,
+    "id": "season_US26",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US26"
+    },
+    "label": "Season: Caramoan (26)",
+    "eligible_us_castaway_count": 20,
+    "eligible_castaway_count": 20
+  },
+  {
+    "enabled": true,
+    "id": "season_US25",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US25"
+    },
+    "label": "Season: Philippines (25)",
+    "eligible_us_castaway_count": 18,
+    "eligible_castaway_count": 18
+  },
+  {
+    "enabled": true,
+    "id": "season_US24",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US24"
+    },
+    "label": "Season: One World (24)",
+    "eligible_us_castaway_count": 18,
+    "eligible_castaway_count": 18
+  },
+  {
+    "enabled": true,
+    "id": "season_US23",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US23"
+    },
+    "label": "Season: South Pacific (23)",
+    "eligible_us_castaway_count": 18,
+    "eligible_castaway_count": 18
+  },
+  {
+    "enabled": true,
+    "id": "season_US22",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US22"
+    },
+    "label": "Season: Redemption Island (22)",
+    "eligible_us_castaway_count": 18,
+    "eligible_castaway_count": 18
+  },
+  {
+    "enabled": true,
+    "id": "season_US21",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US21"
+    },
+    "label": "Season: Nicaragua (21)",
+    "eligible_us_castaway_count": 20,
+    "eligible_castaway_count": 20
+  },
+  {
+    "enabled": true,
+    "id": "season_US20",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US20"
+    },
+    "label": "Season: Heroes vs. Villains (20)",
+    "eligible_us_castaway_count": 20,
+    "eligible_castaway_count": 20
+  },
+  {
+    "enabled": true,
+    "id": "season_US19",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US19"
+    },
+    "label": "Season: Samoa (19)",
+    "eligible_us_castaway_count": 20,
+    "eligible_castaway_count": 20
+  },
+  {
+    "enabled": true,
+    "id": "season_US18",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US18"
+    },
+    "label": "Season: Tocantins (18)",
+    "eligible_us_castaway_count": 16,
+    "eligible_castaway_count": 16
+  },
+  {
+    "enabled": true,
+    "id": "season_US17",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US17"
+    },
+    "label": "Season: Gabon (17)",
+    "eligible_us_castaway_count": 18,
+    "eligible_castaway_count": 18
+  },
+  {
+    "enabled": true,
+    "id": "season_US16",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US16"
+    },
+    "label": "Season: Micronesia (16)",
+    "eligible_us_castaway_count": 20,
+    "eligible_castaway_count": 20
+  },
+  {
+    "enabled": true,
+    "id": "season_US15",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US15"
+    },
+    "label": "Season: China (15)",
+    "eligible_us_castaway_count": 16,
+    "eligible_castaway_count": 16
+  },
+  {
+    "enabled": true,
+    "id": "season_US14",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US14"
+    },
+    "label": "Season: Fiji (14)",
+    "eligible_us_castaway_count": 19,
+    "eligible_castaway_count": 19
+  },
+  {
+    "enabled": true,
+    "id": "season_US13",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US13"
+    },
+    "label": "Season: Cook Islands (13)",
+    "eligible_us_castaway_count": 20,
+    "eligible_castaway_count": 20
+  },
+  {
+    "enabled": true,
+    "id": "season_US12",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US12"
+    },
+    "label": "Season: Panama (12)",
+    "eligible_us_castaway_count": 16,
+    "eligible_castaway_count": 16
+  },
+  {
+    "enabled": true,
+    "id": "season_US11",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US11"
+    },
+    "label": "Season: Guatemala (11)",
+    "eligible_us_castaway_count": 18,
+    "eligible_castaway_count": 18
+  },
+  {
+    "enabled": true,
+    "id": "season_US10",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US10"
+    },
+    "label": "Season: Palau (10)",
+    "eligible_us_castaway_count": 20,
+    "eligible_castaway_count": 20
+  },
+  {
+    "enabled": true,
+    "id": "season_US09",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US09"
+    },
+    "label": "Season: Vanuatu (9)",
+    "eligible_us_castaway_count": 18,
+    "eligible_castaway_count": 18
+  },
+  {
+    "enabled": true,
+    "id": "season_US08",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US08"
+    },
+    "label": "Season: All-Stars (8)",
+    "eligible_us_castaway_count": 18,
+    "eligible_castaway_count": 18
+  },
+  {
+    "enabled": true,
+    "id": "season_US07",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US07"
+    },
+    "label": "Season: Pearl Islands (7)",
+    "eligible_us_castaway_count": 16,
+    "eligible_castaway_count": 16
+  },
+  {
+    "enabled": true,
+    "id": "season_US06",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US06"
+    },
+    "label": "Season: The Amazon (6)",
+    "eligible_us_castaway_count": 16,
+    "eligible_castaway_count": 16
+  },
+  {
+    "enabled": true,
+    "id": "season_US05",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US05"
+    },
+    "label": "Season: Thailand (5)",
+    "eligible_us_castaway_count": 16,
+    "eligible_castaway_count": 16
+  },
+  {
+    "enabled": true,
+    "id": "season_US04",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US04"
+    },
+    "label": "Season: Marquesas (4)",
+    "eligible_us_castaway_count": 16,
+    "eligible_castaway_count": 16
+  },
+  {
+    "enabled": true,
+    "id": "season_US03",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US03"
+    },
+    "label": "Season: Africa (3)",
+    "eligible_us_castaway_count": 16,
+    "eligible_castaway_count": 16
+  },
+  {
+    "enabled": true,
+    "id": "season_US02",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US02"
+    },
+    "label": "Season: The Australian Outback (2)",
+    "eligible_us_castaway_count": 16,
+    "eligible_castaway_count": 16
+  },
+  {
+    "enabled": true,
+    "id": "season_US01",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "US01"
+    },
+    "label": "Season: Borneo (1)",
+    "eligible_us_castaway_count": 16,
+    "eligible_castaway_count": 16
+  },
+  {
+    "enabled": true,
+    "id": "season_AU12",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "AU12"
+    },
+    "label": "Season (Australia): Redemption (12)",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 24
+  },
+  {
+    "enabled": true,
+    "id": "season_AU11",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "AU11"
+    },
+    "label": "Season (Australia): vs. The World (11)",
+    "eligible_us_castaway_count": 3,
+    "eligible_castaway_count": 14
+  },
+  {
+    "enabled": true,
+    "id": "season_AU10",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "AU10"
+    },
+    "label": "Season (Australia): Brains vs. Brawn II (10)",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 24
+  },
+  {
+    "enabled": true,
+    "id": "season_AU09",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "AU09"
+    },
+    "label": "Season (Australia): Titans vs. Rebels (9)",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 24
+  },
+  {
+    "enabled": true,
+    "id": "season_AU08",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "AU08"
+    },
+    "label": "Season (Australia): Heroes vs. Villains (8)",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 24
+  },
+  {
+    "enabled": true,
+    "id": "season_AU07",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "AU07"
+    },
+    "label": "Season (Australia): Blood vs. Water (7)",
+    "eligible_us_castaway_count": 1,
+    "eligible_castaway_count": 24
+  },
+  {
+    "enabled": true,
+    "id": "season_AU06",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "AU06"
+    },
+    "label": "Season (Australia): Brains vs. Brawn (6)",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 24
+  },
+  {
+    "enabled": true,
+    "id": "season_AU05",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "AU05"
+    },
+    "label": "Season (Australia): All Stars (5)",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 24
+  },
+  {
+    "enabled": true,
+    "id": "season_AU04",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "AU04"
+    },
+    "label": "Season (Australia): Champions vs. Contenders (2019) (4)",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 24
+  },
+  {
+    "enabled": true,
+    "id": "season_AU03",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "AU03"
+    },
+    "label": "Season (Australia): Champions vs. Contenders (3)",
+    "eligible_us_castaway_count": 1,
+    "eligible_castaway_count": 24
+  },
+  {
+    "enabled": true,
+    "id": "season_AU02",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "AU02"
+    },
+    "label": "Season (Australia): AU: Season 2017 (2)",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 24
+  },
+  {
+    "enabled": true,
+    "id": "season_AU01",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "AU01"
+    },
+    "label": "Season (Australia): AU: Season 2016 (1)",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 24
+  },
+  {
+    "enabled": true,
+    "id": "season_SA09",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "SA09"
+    },
+    "label": "Season (South Africa): Return of the Outcasts (9)",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 20
+  },
+  {
+    "enabled": true,
+    "id": "season_SA08",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "SA08"
+    },
+    "label": "Season (South Africa): Immunity Island (8)",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 20
+  },
+  {
+    "enabled": true,
+    "id": "season_SA07",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "SA07"
+    },
+    "label": "Season (South Africa): Island of Secrets (7)",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 21
+  },
+  {
+    "enabled": true,
+    "id": "season_SA06",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "SA06"
+    },
+    "label": "Season (South Africa): Philippines (6)",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 18
+  },
+  {
+    "enabled": true,
+    "id": "season_SA05",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "SA05"
+    },
+    "label": "Season (South Africa): Champions (5)",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 20
+  },
+  {
+    "enabled": true,
+    "id": "season_SA04",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "SA04"
+    },
+    "label": "Season (South Africa): Maldives (4)",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 19
+  },
+  {
+    "enabled": true,
+    "id": "season_SA03",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "SA03"
+    },
+    "label": "Season (South Africa): Santa Carolina (3)",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 18
+  },
+  {
+    "enabled": true,
+    "id": "season_SA02",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "SA02"
+    },
+    "label": "Season (South Africa): Malaysia (2)",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 16
+  },
+  {
+    "enabled": true,
+    "id": "season_SA01",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "SA01"
+    },
+    "label": "Season (South Africa): Panama (1)",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 14
+  },
+  {
+    "enabled": true,
+    "id": "season_UK03",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "UK03"
+    },
+    "label": "Season (UK): UK: Season 2023 (3)",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 18
+  },
+  {
+    "enabled": true,
+    "id": "season_UK02",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "UK02"
+    },
+    "label": "Season (UK): Panama (2)",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 12
+  },
+  {
+    "enabled": true,
+    "id": "season_UK01",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "UK01"
+    },
+    "label": "Season (UK): Pulau Tiga (1)",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 16
+  },
+  {
+    "enabled": true,
+    "id": "season_NZ02",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "NZ02"
+    },
+    "label": "Season (New Zealand): Thailand (2)",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 18
+  },
+  {
+    "enabled": true,
+    "id": "season_NZ01",
+    "group": "season",
+    "type": "season_played",
+    "params": {
+      "season": "NZ01"
+    },
+    "label": "Season (New Zealand): Nicaragua (1)",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 16
+  },
+  {
+    "enabled": true,
+    "id": "held_shot_in_the_dark",
+    "group": "advantages",
+    "type": "advantage_held",
+    "params": {
+      "advantage_type": "shot in the dark"
+    },
+    "label": "Held: shot in the dark",
+    "eligible_us_castaway_count": 173,
+    "eligible_castaway_count": 173
+  },
+  {
+    "enabled": true,
+    "id": "used_shot_in_the_dark",
+    "group": "advantages",
+    "type": "advantage_used",
+    "params": {
+      "advantage_type": "shot in the dark"
+    },
+    "label": "Used: shot in the dark",
+    "eligible_us_castaway_count": 19,
+    "eligible_castaway_count": 19
+  },
+  {
+    "enabled": true,
+    "id": "success_shot_in_the_dark",
+    "group": "advantages",
+    "type": "advantage_success",
+    "params": {
+      "advantage_type": "shot in the dark",
+      "success": true
+    },
+    "label": "Successful: shot in the dark",
+    "eligible_us_castaway_count": 3,
+    "eligible_castaway_count": 3
+  },
+  {
+    "enabled": true,
+    "id": "fail_shot_in_the_dark",
+    "group": "advantages",
+    "type": "advantage_failed",
+    "params": {
+      "advantage_type": "shot in the dark"
+    },
+    "label": "Failed: shot in the dark",
+    "eligible_us_castaway_count": 16,
+    "eligible_castaway_count": 16
+  },
+  {
+    "enabled": true,
+    "id": "held_hidden_immunity_idol",
+    "group": "advantages",
+    "type": "advantage_held",
+    "params": {
+      "advantage_type": "hidden immunity idol"
+    },
+    "label": "Held: hidden immunity idol",
+    "eligible_us_castaway_count": 147,
+    "eligible_castaway_count": 248
+  },
+  {
+    "enabled": true,
+    "id": "used_hidden_immunity_idol",
+    "group": "advantages",
+    "type": "advantage_used",
+    "params": {
+      "advantage_type": "hidden immunity idol"
+    },
+    "label": "Used: hidden immunity idol",
+    "eligible_us_castaway_count": 90,
+    "eligible_castaway_count": 157
+  },
+  {
+    "enabled": true,
+    "id": "success_hidden_immunity_idol",
+    "group": "advantages",
+    "type": "advantage_success",
+    "params": {
+      "advantage_type": "hidden immunity idol",
+      "success": true
+    },
+    "label": "Successful: hidden immunity idol",
+    "eligible_us_castaway_count": 35,
+    "eligible_castaway_count": 67
+  },
+  {
+    "enabled": true,
+    "id": "fail_hidden_immunity_idol",
+    "group": "advantages",
+    "type": "advantage_failed",
+    "params": {
+      "advantage_type": "hidden immunity idol"
+    },
+    "label": "Failed: hidden immunity idol",
+    "eligible_us_castaway_count": 66,
+    "eligible_castaway_count": 110
+  },
+  {
+    "enabled": true,
+    "id": "held_extra_vote",
+    "group": "advantages",
+    "type": "advantage_held",
+    "params": {
+      "advantage_type": "extra vote"
+    },
+    "label": "Held: extra vote",
+    "eligible_us_castaway_count": 26,
+    "eligible_castaway_count": 31
+  },
+  {
+    "enabled": true,
+    "id": "used_extra_vote",
+    "group": "advantages",
+    "type": "advantage_used",
+    "params": {
+      "advantage_type": "extra vote"
+    },
+    "label": "Used: extra vote",
+    "eligible_us_castaway_count": 15,
+    "eligible_castaway_count": 19
+  },
+  {
+    "enabled": true,
+    "id": "success_extra_vote",
+    "group": "advantages",
+    "type": "advantage_success",
+    "params": {
+      "advantage_type": "extra vote",
+      "success": true
+    },
+    "label": "Successful: extra vote",
+    "eligible_us_castaway_count": 4,
+    "eligible_castaway_count": 5
+  },
+  {
+    "enabled": true,
+    "id": "fail_extra_vote",
+    "group": "advantages",
+    "type": "advantage_failed",
+    "params": {
+      "advantage_type": "extra vote"
+    },
+    "label": "Failed: extra vote",
+    "eligible_us_castaway_count": 11,
+    "eligible_castaway_count": 14
+  },
+  {
+    "enabled": true,
+    "id": "held_bank_your_vote",
+    "group": "advantages",
+    "type": "advantage_held",
+    "params": {
+      "advantage_type": "bank your vote"
+    },
+    "label": "Held: bank your vote",
+    "eligible_us_castaway_count": 3,
+    "eligible_castaway_count": 3
+  },
+  {
+    "enabled": true,
+    "id": "used_bank_your_vote",
+    "group": "advantages",
+    "type": "advantage_used",
+    "params": {
+      "advantage_type": "bank your vote"
+    },
+    "label": "Used: bank your vote",
+    "eligible_us_castaway_count": 1,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "fail_bank_your_vote",
+    "group": "advantages",
+    "type": "advantage_failed",
+    "params": {
+      "advantage_type": "bank your vote"
+    },
+    "label": "Failed: bank your vote",
+    "eligible_us_castaway_count": 1,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "held_block_a_vote",
+    "group": "advantages",
+    "type": "advantage_held",
+    "params": {
+      "advantage_type": "block a vote"
+    },
+    "label": "Held: block a vote",
+    "eligible_us_castaway_count": 4,
+    "eligible_castaway_count": 4
+  },
+  {
+    "enabled": true,
+    "id": "used_block_a_vote",
+    "group": "advantages",
+    "type": "advantage_used",
+    "params": {
+      "advantage_type": "block a vote"
+    },
+    "label": "Used: block a vote",
+    "eligible_us_castaway_count": 3,
+    "eligible_castaway_count": 3
+  },
+  {
+    "enabled": true,
+    "id": "fail_block_a_vote",
+    "group": "advantages",
+    "type": "advantage_failed",
+    "params": {
+      "advantage_type": "block a vote"
+    },
+    "label": "Failed: block a vote",
+    "eligible_us_castaway_count": 3,
+    "eligible_castaway_count": 3
+  },
+  {
+    "enabled": true,
+    "id": "held_challenge_advantage",
+    "group": "advantages",
+    "type": "advantage_held",
+    "params": {
+      "advantage_type": "challenge advantage"
+    },
+    "label": "Held: challenge advantage",
+    "eligible_us_castaway_count": 8,
+    "eligible_castaway_count": 15
+  },
+  {
+    "enabled": true,
+    "id": "used_challenge_advantage",
+    "group": "advantages",
+    "type": "advantage_used",
+    "params": {
+      "advantage_type": "challenge advantage"
+    },
+    "label": "Used: challenge advantage",
+    "eligible_us_castaway_count": 8,
+    "eligible_castaway_count": 15
+  },
+  {
+    "enabled": true,
+    "id": "success_challenge_advantage",
+    "group": "advantages",
+    "type": "advantage_success",
+    "params": {
+      "advantage_type": "challenge advantage",
+      "success": true
+    },
+    "label": "Successful: challenge advantage",
+    "eligible_us_castaway_count": 1,
+    "eligible_castaway_count": 2
+  },
+  {
+    "enabled": true,
+    "id": "fail_challenge_advantage",
+    "group": "advantages",
+    "type": "advantage_failed",
+    "params": {
+      "advantage_type": "challenge advantage"
+    },
+    "label": "Failed: challenge advantage",
+    "eligible_us_castaway_count": 7,
+    "eligible_castaway_count": 13
+  },
+  {
+    "enabled": true,
+    "id": "held_super_idol",
+    "group": "advantages",
+    "type": "advantage_held",
+    "params": {
+      "advantage_type": "super idol"
+    },
+    "label": "Held: super idol",
+    "eligible_us_castaway_count": 5,
+    "eligible_castaway_count": 5
+  },
+  {
+    "enabled": true,
+    "id": "held_steal_a_vote",
+    "group": "advantages",
+    "type": "advantage_held",
+    "params": {
+      "advantage_type": "steal a vote"
+    },
+    "label": "Held: steal a vote",
+    "eligible_us_castaway_count": 9,
+    "eligible_castaway_count": 11
+  },
+  {
+    "enabled": true,
+    "id": "used_steal_a_vote",
+    "group": "advantages",
+    "type": "advantage_used",
+    "params": {
+      "advantage_type": "steal a vote"
+    },
+    "label": "Used: steal a vote",
+    "eligible_us_castaway_count": 6,
+    "eligible_castaway_count": 8
+  },
+  {
+    "enabled": true,
+    "id": "success_steal_a_vote",
+    "group": "advantages",
+    "type": "advantage_success",
+    "params": {
+      "advantage_type": "steal a vote",
+      "success": true
+    },
+    "label": "Successful: steal a vote",
+    "eligible_us_castaway_count": 2,
+    "eligible_castaway_count": 3
+  },
+  {
+    "enabled": true,
+    "id": "fail_steal_a_vote",
+    "group": "advantages",
+    "type": "advantage_failed",
+    "params": {
+      "advantage_type": "steal a vote"
+    },
+    "label": "Failed: steal a vote",
+    "eligible_us_castaway_count": 4,
+    "eligible_castaway_count": 5
+  },
+  {
+    "enabled": true,
+    "id": "held_hidden_immunity_idol_half",
+    "group": "advantages",
+    "type": "advantage_held",
+    "params": {
+      "advantage_type": "hidden immunity idol half"
+    },
+    "label": "Held: hidden immunity idol half",
+    "eligible_us_castaway_count": 10,
+    "eligible_castaway_count": 13
+  },
+  {
+    "enabled": true,
+    "id": "held_knowledge_is_power",
+    "group": "advantages",
+    "type": "advantage_held",
+    "params": {
+      "advantage_type": "knowledge is power"
+    },
+    "label": "Held: knowledge is power",
+    "eligible_us_castaway_count": 6,
+    "eligible_castaway_count": 7
+  },
+  {
+    "enabled": true,
+    "id": "used_knowledge_is_power",
+    "group": "advantages",
+    "type": "advantage_used",
+    "params": {
+      "advantage_type": "knowledge is power"
+    },
+    "label": "Used: knowledge is power",
+    "eligible_us_castaway_count": 3,
+    "eligible_castaway_count": 4
+  },
+  {
+    "enabled": true,
+    "id": "success_knowledge_is_power",
+    "group": "advantages",
+    "type": "advantage_success",
+    "params": {
+      "advantage_type": "knowledge is power",
+      "success": true
+    },
+    "label": "Successful: knowledge is power",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "fail_knowledge_is_power",
+    "group": "advantages",
+    "type": "advantage_failed",
+    "params": {
+      "advantage_type": "knowledge is power"
+    },
+    "label": "Failed: knowledge is power",
+    "eligible_us_castaway_count": 3,
+    "eligible_castaway_count": 3
+  },
+  {
+    "enabled": true,
+    "id": "held_safety_without_power",
+    "group": "advantages",
+    "type": "advantage_held",
+    "params": {
+      "advantage_type": "safety without power"
+    },
+    "label": "Held: safety without power",
+    "eligible_us_castaway_count": 3,
+    "eligible_castaway_count": 6
+  },
+  {
+    "enabled": true,
+    "id": "used_safety_without_power",
+    "group": "advantages",
+    "type": "advantage_used",
+    "params": {
+      "advantage_type": "safety without power"
+    },
+    "label": "Used: safety without power",
+    "eligible_us_castaway_count": 1,
+    "eligible_castaway_count": 3
+  },
+  {
+    "enabled": true,
+    "id": "success_safety_without_power",
+    "group": "advantages",
+    "type": "advantage_success",
+    "params": {
+      "advantage_type": "safety without power",
+      "success": true
+    },
+    "label": "Successful: safety without power",
+    "eligible_us_castaway_count": 1,
+    "eligible_castaway_count": 2
+  },
+  {
+    "enabled": true,
+    "id": "fail_safety_without_power",
+    "group": "advantages",
+    "type": "advantage_failed",
+    "params": {
+      "advantage_type": "safety without power"
+    },
+    "label": "Failed: safety without power",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "held_amulet",
+    "group": "advantages",
+    "type": "advantage_held",
+    "params": {
+      "advantage_type": "amulet"
+    },
+    "label": "Held: amulet",
+    "eligible_us_castaway_count": 9,
+    "eligible_castaway_count": 9
+  },
+  {
+    "enabled": true,
+    "id": "used_amulet",
+    "group": "advantages",
+    "type": "advantage_used",
+    "params": {
+      "advantage_type": "amulet"
+    },
+    "label": "Used: amulet",
+    "eligible_us_castaway_count": 4,
+    "eligible_castaway_count": 4
+  },
+  {
+    "enabled": true,
+    "id": "fail_amulet",
+    "group": "advantages",
+    "type": "advantage_failed",
+    "params": {
+      "advantage_type": "amulet"
+    },
+    "label": "Failed: amulet",
+    "eligible_us_castaway_count": 4,
+    "eligible_castaway_count": 4
+  },
+  {
+    "enabled": true,
+    "id": "held_goodwill_advantage",
+    "group": "advantages",
+    "type": "advantage_held",
+    "params": {
+      "advantage_type": "goodwill advantage"
+    },
+    "label": "Held: goodwill advantage",
+    "eligible_us_castaway_count": 3,
+    "eligible_castaway_count": 3
+  },
+  {
+    "enabled": true,
+    "id": "used_goodwill_advantage",
+    "group": "advantages",
+    "type": "advantage_used",
+    "params": {
+      "advantage_type": "goodwill advantage"
+    },
+    "label": "Used: goodwill advantage",
+    "eligible_us_castaway_count": 1,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "fail_goodwill_advantage",
+    "group": "advantages",
+    "type": "advantage_failed",
+    "params": {
+      "advantage_type": "goodwill advantage"
+    },
+    "label": "Failed: goodwill advantage",
+    "eligible_us_castaway_count": 1,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "held_inheritance_advantage",
+    "group": "advantages",
+    "type": "advantage_held",
+    "params": {
+      "advantage_type": "inheritance advantage"
+    },
+    "label": "Held: inheritance advantage",
+    "eligible_us_castaway_count": 1,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "held_fake_hidden_immunity_idol",
+    "group": "advantages",
+    "type": "advantage_held",
+    "params": {
+      "advantage_type": "fake hidden immunity idol"
+    },
+    "label": "Held: fake hidden immunity idol",
+    "eligible_us_castaway_count": 1,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "held_control_the_vote",
+    "group": "advantages",
+    "type": "advantage_held",
+    "params": {
+      "advantage_type": "control the vote"
+    },
+    "label": "Held: control the vote",
+    "eligible_us_castaway_count": 1,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "used_control_the_vote",
+    "group": "advantages",
+    "type": "advantage_used",
+    "params": {
+      "advantage_type": "control the vote"
+    },
+    "label": "Used: control the vote",
+    "eligible_us_castaway_count": 1,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "fail_control_the_vote",
+    "group": "advantages",
+    "type": "advantage_failed",
+    "params": {
+      "advantage_type": "control the vote"
+    },
+    "label": "Failed: control the vote",
+    "eligible_us_castaway_count": 1,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "held_choose_your_champion",
+    "group": "advantages",
+    "type": "advantage_held",
+    "params": {
+      "advantage_type": "choose your champion"
+    },
+    "label": "Held: choose your champion",
+    "eligible_us_castaway_count": 1,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "used_choose_your_champion",
+    "group": "advantages",
+    "type": "advantage_used",
+    "params": {
+      "advantage_type": "choose your champion"
+    },
+    "label": "Used: choose your champion",
+    "eligible_us_castaway_count": 1,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "success_choose_your_champion",
+    "group": "advantages",
+    "type": "advantage_success",
+    "params": {
+      "advantage_type": "choose your champion",
+      "success": true
+    },
+    "label": "Successful: choose your champion",
+    "eligible_us_castaway_count": 1,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "held_idol_nullifier",
+    "group": "advantages",
+    "type": "advantage_held",
+    "params": {
+      "advantage_type": "idol nullifier"
+    },
+    "label": "Held: idol nullifier",
+    "eligible_us_castaway_count": 5,
+    "eligible_castaway_count": 6
+  },
+  {
+    "enabled": true,
+    "id": "used_idol_nullifier",
+    "group": "advantages",
+    "type": "advantage_used",
+    "params": {
+      "advantage_type": "idol nullifier"
+    },
+    "label": "Used: idol nullifier",
+    "eligible_us_castaway_count": 2,
+    "eligible_castaway_count": 3
+  },
+  {
+    "enabled": true,
+    "id": "success_idol_nullifier",
+    "group": "advantages",
+    "type": "advantage_success",
+    "params": {
+      "advantage_type": "idol nullifier",
+      "success": true
+    },
+    "label": "Successful: idol nullifier",
+    "eligible_us_castaway_count": 2,
+    "eligible_castaway_count": 3
+  },
+  {
+    "enabled": true,
+    "id": "held_reward_stealer",
+    "group": "advantages",
+    "type": "advantage_held",
+    "params": {
+      "advantage_type": "reward stealer"
+    },
+    "label": "Held: reward stealer",
+    "eligible_us_castaway_count": 2,
+    "eligible_castaway_count": 3
+  },
+  {
+    "enabled": true,
+    "id": "used_reward_stealer",
+    "group": "advantages",
+    "type": "advantage_used",
+    "params": {
+      "advantage_type": "reward stealer"
+    },
+    "label": "Used: reward stealer",
+    "eligible_us_castaway_count": 1,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "success_reward_stealer",
+    "group": "advantages",
+    "type": "advantage_success",
+    "params": {
+      "advantage_type": "reward stealer",
+      "success": true
+    },
+    "label": "Successful: reward stealer",
+    "eligible_us_castaway_count": 1,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "held_vote_blocker",
+    "group": "advantages",
+    "type": "advantage_held",
+    "params": {
+      "advantage_type": "vote blocker"
+    },
+    "label": "Held: vote blocker",
+    "eligible_us_castaway_count": 2,
+    "eligible_castaway_count": 4
+  },
+  {
+    "enabled": true,
+    "id": "used_vote_blocker",
+    "group": "advantages",
+    "type": "advantage_used",
+    "params": {
+      "advantage_type": "vote blocker"
+    },
+    "label": "Used: vote blocker",
+    "eligible_us_castaway_count": 2,
+    "eligible_castaway_count": 3
+  },
+  {
+    "enabled": true,
+    "id": "success_vote_blocker",
+    "group": "advantages",
+    "type": "advantage_success",
+    "params": {
+      "advantage_type": "vote blocker",
+      "success": true
+    },
+    "label": "Successful: vote blocker",
+    "eligible_us_castaway_count": 2,
+    "eligible_castaway_count": 3
+  },
+  {
+    "enabled": true,
+    "id": "held_advantage_menu",
+    "group": "advantages",
+    "type": "advantage_held",
+    "params": {
+      "advantage_type": "advantage menu"
+    },
+    "label": "Held: advantage menu",
+    "eligible_us_castaway_count": 1,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "held_preventative_hidden_immunity_idol",
+    "group": "advantages",
+    "type": "advantage_held",
+    "params": {
+      "advantage_type": "preventative hidden immunity idol"
+    },
+    "label": "Held: preventative hidden immunity idol",
+    "eligible_us_castaway_count": 1,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "used_preventative_hidden_immunity_idol",
+    "group": "advantages",
+    "type": "advantage_used",
+    "params": {
+      "advantage_type": "preventative hidden immunity idol"
+    },
+    "label": "Used: preventative hidden immunity idol",
+    "eligible_us_castaway_count": 1,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "success_preventative_hidden_immunity_idol",
+    "group": "advantages",
+    "type": "advantage_success",
+    "params": {
+      "advantage_type": "preventative hidden immunity idol",
+      "success": true
+    },
+    "label": "Successful: preventative hidden immunity idol",
+    "eligible_us_castaway_count": 1,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "held_safety_with_power",
+    "group": "advantages",
+    "type": "advantage_held",
+    "params": {
+      "advantage_type": "safety with power"
+    },
+    "label": "Held: safety with power",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "used_safety_with_power",
+    "group": "advantages",
+    "type": "advantage_used",
+    "params": {
+      "advantage_type": "safety with power"
+    },
+    "label": "Used: safety with power",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "success_safety_with_power",
+    "group": "advantages",
+    "type": "advantage_success",
+    "params": {
+      "advantage_type": "safety with power",
+      "success": true
+    },
+    "label": "Successful: safety with power",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "held_kidnap_castaway_from_other_tribe",
+    "group": "advantages",
+    "type": "advantage_held",
+    "params": {
+      "advantage_type": "kidnap castaway from other tribe"
+    },
+    "label": "Held: kidnap castaway from other tribe",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "held_practice_advantage",
+    "group": "advantages",
+    "type": "advantage_held",
+    "params": {
+      "advantage_type": "practice advantage"
+    },
+    "label": "Held: practice advantage",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 2
+  },
+  {
+    "enabled": true,
+    "id": "used_practice_advantage",
+    "group": "advantages",
+    "type": "advantage_used",
+    "params": {
+      "advantage_type": "practice advantage"
+    },
+    "label": "Used: practice advantage",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 2
+  },
+  {
+    "enabled": true,
+    "id": "success_practice_advantage",
+    "group": "advantages",
+    "type": "advantage_success",
+    "params": {
+      "advantage_type": "practice advantage",
+      "success": true
+    },
+    "label": "Successful: practice advantage",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 2
+  },
+  {
+    "enabled": true,
+    "id": "held_ultimate_vote",
+    "group": "advantages",
+    "type": "advantage_held",
+    "params": {
+      "advantage_type": "ultimate vote"
+    },
+    "label": "Held: ultimate vote",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "used_ultimate_vote",
+    "group": "advantages",
+    "type": "advantage_used",
+    "params": {
+      "advantage_type": "ultimate vote"
+    },
+    "label": "Used: ultimate vote",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "success_ultimate_vote",
+    "group": "advantages",
+    "type": "advantage_success",
+    "params": {
+      "advantage_type": "ultimate vote",
+      "success": true
+    },
+    "label": "Successful: ultimate vote",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "held_voter_remover",
+    "group": "advantages",
+    "type": "advantage_held",
+    "params": {
+      "advantage_type": "voter remover"
+    },
+    "label": "Held: voter remover",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "used_voter_remover",
+    "group": "advantages",
+    "type": "advantage_used",
+    "params": {
+      "advantage_type": "voter remover"
+    },
+    "label": "Used: voter remover",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "fail_voter_remover",
+    "group": "advantages",
+    "type": "advantage_failed",
+    "params": {
+      "advantage_type": "voter remover"
+    },
+    "label": "Failed: voter remover",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "held_moral_dilemma",
+    "group": "advantages",
+    "type": "advantage_held",
+    "params": {
+      "advantage_type": "moral dilemma"
+    },
+    "label": "Held: moral dilemma",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 2
+  },
+  {
+    "enabled": true,
+    "id": "held_remove_jury_member",
+    "group": "advantages",
+    "type": "advantage_held",
+    "params": {
+      "advantage_type": "remove jury member"
+    },
+    "label": "Held: remove jury member",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 2
+  },
+  {
+    "enabled": true,
+    "id": "used_remove_jury_member",
+    "group": "advantages",
+    "type": "advantage_used",
+    "params": {
+      "advantage_type": "remove jury member"
+    },
+    "label": "Used: remove jury member",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 2
+  },
+  {
+    "enabled": true,
+    "id": "success_remove_jury_member",
+    "group": "advantages",
+    "type": "advantage_success",
+    "params": {
+      "advantage_type": "remove jury member",
+      "success": true
+    },
+    "label": "Successful: remove jury member",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "fail_remove_jury_member",
+    "group": "advantages",
+    "type": "advantage_failed",
+    "params": {
+      "advantage_type": "remove jury member"
+    },
+    "label": "Failed: remove jury member",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "held_tribal_council_pass",
+    "group": "advantages",
+    "type": "advantage_held",
+    "params": {
+      "advantage_type": "tribal council pass"
+    },
+    "label": "Held: tribal council pass",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "used_tribal_council_pass",
+    "group": "advantages",
+    "type": "advantage_used",
+    "params": {
+      "advantage_type": "tribal council pass"
+    },
+    "label": "Used: tribal council pass",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "fail_tribal_council_pass",
+    "group": "advantages",
+    "type": "advantage_failed",
+    "params": {
+      "advantage_type": "tribal council pass"
+    },
+    "label": "Failed: tribal council pass",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "held_outsurance_reward_send_token",
+    "group": "advantages",
+    "type": "advantage_held",
+    "params": {
+      "advantage_type": "outsurance reward send token"
+    },
+    "label": "Held: outsurance reward send token",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 2
+  },
+  {
+    "enabled": true,
+    "id": "used_outsurance_reward_send_token",
+    "group": "advantages",
+    "type": "advantage_used",
+    "params": {
+      "advantage_type": "outsurance reward send token"
+    },
+    "label": "Used: outsurance reward send token",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "success_outsurance_reward_send_token",
+    "group": "advantages",
+    "type": "advantage_success",
+    "params": {
+      "advantage_type": "outsurance reward send token",
+      "success": true
+    },
+    "label": "Successful: outsurance reward send token",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "held_coin_flip",
+    "group": "advantages",
+    "type": "advantage_held",
+    "params": {
+      "advantage_type": "coin flip"
+    },
+    "label": "Held: coin flip",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "held_diplomatic_immunity",
+    "group": "advantages",
+    "type": "advantage_held",
+    "params": {
+      "advantage_type": "diplomatic immunity"
+    },
+    "label": "Held: diplomatic immunity",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 2
+  },
+  {
+    "enabled": true,
+    "id": "used_diplomatic_immunity",
+    "group": "advantages",
+    "type": "advantage_used",
+    "params": {
+      "advantage_type": "diplomatic immunity"
+    },
+    "label": "Used: diplomatic immunity",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "fail_diplomatic_immunity",
+    "group": "advantages",
+    "type": "advantage_failed",
+    "params": {
+      "advantage_type": "diplomatic immunity"
+    },
+    "label": "Failed: diplomatic immunity",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "held_save_the_date",
+    "group": "advantages",
+    "type": "advantage_held",
+    "params": {
+      "advantage_type": "save the date"
+    },
+    "label": "Held: save the date",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "used_save_the_date",
+    "group": "advantages",
+    "type": "advantage_used",
+    "params": {
+      "advantage_type": "save the date"
+    },
+    "label": "Used: save the date",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "success_save_the_date",
+    "group": "advantages",
+    "type": "advantage_success",
+    "params": {
+      "advantage_type": "save the date",
+      "success": true
+    },
+    "label": "Successful: save the date",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "held_black_cowrie",
+    "group": "advantages",
+    "type": "advantage_held",
+    "params": {
+      "advantage_type": "black cowrie"
+    },
+    "label": "Held: black cowrie",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 3
+  },
+  {
+    "enabled": true,
+    "id": "used_black_cowrie",
+    "group": "advantages",
+    "type": "advantage_used",
+    "params": {
+      "advantage_type": "black cowrie"
+    },
+    "label": "Used: black cowrie",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 3
+  },
+  {
+    "enabled": true,
+    "id": "fail_black_cowrie",
+    "group": "advantages",
+    "type": "advantage_failed",
+    "params": {
+      "advantage_type": "black cowrie"
+    },
+    "label": "Failed: black cowrie",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 3
+  },
+  {
+    "enabled": true,
+    "id": "held_white_cowrie",
+    "group": "advantages",
+    "type": "advantage_held",
+    "params": {
+      "advantage_type": "white cowrie"
+    },
+    "label": "Held: white cowrie",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 2
+  },
+  {
+    "enabled": true,
+    "id": "used_white_cowrie",
+    "group": "advantages",
+    "type": "advantage_used",
+    "params": {
+      "advantage_type": "white cowrie"
+    },
+    "label": "Used: white cowrie",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 2
+  },
+  {
+    "enabled": true,
+    "id": "fail_white_cowrie",
+    "group": "advantages",
+    "type": "advantage_failed",
+    "params": {
+      "advantage_type": "white cowrie"
+    },
+    "label": "Failed: white cowrie",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 2
+  },
+  {
+    "enabled": true,
+    "id": "held_disadvantage_future_vote_cast_against_you",
+    "group": "advantages",
+    "type": "advantage_held",
+    "params": {
+      "advantage_type": "disadvantage future vote cast against you"
+    },
+    "label": "Held: disadvantage future vote cast against you",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "used_disadvantage_future_vote_cast_against_you",
+    "group": "advantages",
+    "type": "advantage_used",
+    "params": {
+      "advantage_type": "disadvantage future vote cast against you"
+    },
+    "label": "Used: disadvantage future vote cast against you",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "fail_disadvantage_future_vote_cast_against_you",
+    "group": "advantages",
+    "type": "advantage_failed",
+    "params": {
+      "advantage_type": "disadvantage future vote cast against you"
+    },
+    "label": "Failed: disadvantage future vote cast against you",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "found_boomerang_idol",
+    "group": "advantages",
+    "type": "advantage_found",
+    "params": {
+      "advantage_type": "boomerang idol"
+    },
+    "label": "Found: boomerang idol",
+    "eligible_us_castaway_count": 2,
+    "eligible_castaway_count": 2
+  },
+  {
+    "enabled": true,
+    "id": "received_boomerang_idol",
+    "group": "advantages",
+    "type": "advantage_received",
+    "params": {
+      "advantage_type": "boomerang idol"
+    },
+    "label": "Received: boomerang idol",
+    "eligible_us_castaway_count": 3,
+    "eligible_castaway_count": 3
+  },
+  {
+    "enabled": true,
+    "id": "tribe_color_red",
+    "group": "tribe_color",
+    "type": "tribe_color",
+    "params": {
+      "color": "red"
+    },
+    "label": "Tribe Color: red",
+    "eligible_us_castaway_count": 316,
+    "eligible_castaway_count": 498
+  },
+  {
+    "enabled": true,
+    "id": "tribe_color_orange",
+    "group": "tribe_color",
+    "type": "tribe_color",
+    "params": {
+      "color": "orange"
+    },
+    "label": "Tribe Color: orange",
+    "eligible_us_castaway_count": 249,
+    "eligible_castaway_count": 312
+  },
+  {
+    "enabled": true,
+    "id": "tribe_color_yellow",
+    "group": "tribe_color",
+    "type": "tribe_color",
+    "params": {
+      "color": "yellow"
+    },
+    "label": "Tribe Color: yellow",
+    "eligible_us_castaway_count": 251,
+    "eligible_castaway_count": 409
+  },
+  {
+    "enabled": true,
+    "id": "tribe_color_green",
+    "group": "tribe_color",
+    "type": "tribe_color",
+    "params": {
+      "color": "green"
+    },
+    "label": "Tribe Color: green",
+    "eligible_us_castaway_count": 222,
+    "eligible_castaway_count": 351
+  },
+  {
+    "enabled": true,
+    "id": "tribe_color_blue",
+    "group": "tribe_color",
+    "type": "tribe_color",
+    "params": {
+      "color": "blue"
+    },
+    "label": "Tribe Color: blue",
+    "eligible_us_castaway_count": 319,
+    "eligible_castaway_count": 574
+  },
+  {
+    "enabled": true,
+    "id": "tribe_color_purple",
+    "group": "tribe_color",
+    "type": "tribe_color",
+    "params": {
+      "color": "purple"
+    },
+    "label": "Tribe Color: purple",
+    "eligible_us_castaway_count": 236,
+    "eligible_castaway_count": 332
+  },
+  {
+    "enabled": true,
+    "id": "tribe_color_black",
+    "group": "tribe_color",
+    "type": "tribe_color",
+    "params": {
+      "color": "black"
+    },
+    "label": "Tribe Color: black",
+    "eligible_us_castaway_count": 161,
+    "eligible_castaway_count": 274
+  },
+  {
+    "enabled": true,
+    "id": "tribe_color_brown",
+    "group": "tribe_color",
+    "type": "tribe_color",
+    "params": {
+      "color": "brown"
+    },
+    "label": "Tribe Color: brown",
+    "eligible_us_castaway_count": 10,
+    "eligible_castaway_count": 10
+  },
+  {
+    "enabled": true,
+    "id": "tribe_color_pink",
+    "group": "tribe_color",
+    "type": "tribe_color",
+    "params": {
+      "color": "pink"
+    },
+    "label": "Tribe Color: pink",
+    "eligible_us_castaway_count": 35,
+    "eligible_castaway_count": 67
+  },
+  {
+    "enabled": true,
+    "id": "sitout_career_1plus",
+    "group": "challenges",
+    "type": "sit_out_min_count",
+    "params": {
+      "min": 1,
+      "scope": "career"
+    },
+    "label": "1+ Sit-Outs",
+    "eligible_us_castaway_count": 361,
+    "eligible_castaway_count": 436
+  },
+  {
+    "enabled": true,
+    "id": "sitout_career_2plus",
+    "group": "challenges",
+    "type": "sit_out_min_count",
+    "params": {
+      "min": 2,
+      "scope": "career"
+    },
+    "label": "2+ Sit-Outs (Career)",
+    "eligible_us_castaway_count": 177,
+    "eligible_castaway_count": 216
+  },
+  {
+    "enabled": true,
+    "id": "sitout_career_3plus",
+    "group": "challenges",
+    "type": "sit_out_min_count",
+    "params": {
+      "min": 3,
+      "scope": "career"
+    },
+    "label": "3+ Sit-Outs (Career)",
+    "eligible_us_castaway_count": 76,
+    "eligible_castaway_count": 95
+  },
+  {
+    "enabled": true,
+    "id": "sitout_career_5plus",
+    "group": "challenges",
+    "type": "sit_out_min_count",
+    "params": {
+      "min": 5,
+      "scope": "career"
+    },
+    "label": "5+ Sit-Outs (Career)",
+    "eligible_us_castaway_count": 16,
+    "eligible_castaway_count": 19
+  },
+  {
+    "enabled": true,
+    "id": "sitout_career_8plus",
+    "group": "challenges",
+    "type": "sit_out_min_count",
+    "params": {
+      "min": 8,
+      "scope": "career"
+    },
+    "label": "8+ Sit-Outs (Career)",
+    "eligible_us_castaway_count": 4,
+    "eligible_castaway_count": 4
+  },
+  {
+    "enabled": true,
+    "id": "sitout_career_10plus",
+    "group": "challenges",
+    "type": "sit_out_min_count",
+    "params": {
+      "min": 10,
+      "scope": "career"
+    },
+    "label": "10+ Sit-Outs (Career)",
+    "eligible_us_castaway_count": 2,
+    "eligible_castaway_count": 2
+  },
+  {
+    "enabled": false,
+    "id": "sitout_season_1plus",
+    "group": "challenges",
+    "type": "sit_out_min_count",
+    "params": {
+      "min": 1,
+      "scope": "season"
+    },
+    "label": "1+ Sit-Outs",
+    "eligible_us_castaway_count": 361,
+    "eligible_castaway_count": 436
+  },
+  {
+    "enabled": true,
+    "id": "sitout_season_2plus",
+    "group": "challenges",
+    "type": "sit_out_min_count",
+    "params": {
+      "min": 2,
+      "scope": "season"
+    },
+    "label": "2+ Sit-Outs (Single Season)",
+    "eligible_us_castaway_count": 169,
+    "eligible_castaway_count": 206
+  },
+  {
+    "enabled": true,
+    "id": "sitout_season_3plus",
+    "group": "challenges",
+    "type": "sit_out_min_count",
+    "params": {
+      "min": 3,
+      "scope": "season"
+    },
+    "label": "3+ Sit-Outs (Single Season)",
+    "eligible_us_castaway_count": 63,
+    "eligible_castaway_count": 82
+  },
+  {
+    "enabled": true,
+    "id": "sitout_season_4plus",
+    "group": "challenges",
+    "type": "sit_out_min_count",
+    "params": {
+      "min": 4,
+      "scope": "season"
+    },
+    "label": "4+ Sit-Outs (Single Season)",
+    "eligible_us_castaway_count": 24,
+    "eligible_castaway_count": 35
+  },
+  {
+    "enabled": true,
+    "id": "sitout_season_5plus",
+    "group": "challenges",
+    "type": "sit_out_min_count",
+    "params": {
+      "min": 5,
+      "scope": "season"
+    },
+    "label": "5+ Sit-Outs (Single Season)",
+    "eligible_us_castaway_count": 10,
+    "eligible_castaway_count": 13
+  },
+  {
+    "enabled": true,
+    "id": "sitout_career_0",
+    "group": "challenges",
+    "type": "sit_out_min_count",
+    "params": {
+      "min": 0,
+      "max": 0,
+      "scope": "career"
+    },
+    "label": "0 Sit-Outs (Career)",
+    "eligible_us_castaway_count": 390,
+    "eligible_castaway_count": 762
+  },
+  {
+    "enabled": true,
+    "id": "sitout_season_0",
+    "group": "challenges",
+    "type": "sit_out_min_count",
+    "params": {
+      "min": 0,
+      "max": 0,
+      "scope": "season"
+    },
+    "label": "0 Sit-Outs (Single Season)",
+    "eligible_us_castaway_count": 459,
+    "eligible_castaway_count": 841
+  },
+  {
+    "enabled": true,
+    "id": "votes_against_career_1plus",
+    "group": "voting",
+    "type": "votes_against_count",
+    "params": {
+      "min": 1,
+      "scope": "career"
+    },
+    "label": "1+ Votes Against",
+    "eligible_us_castaway_count": 717,
+    "eligible_castaway_count": 1149
+  },
+  {
+    "enabled": true,
+    "id": "votes_against_career_2plus",
+    "group": "voting",
+    "type": "votes_against_count",
+    "params": {
+      "min": 2,
+      "scope": "career"
+    },
+    "label": "2+ Votes Against (Career)",
+    "eligible_us_castaway_count": 696,
+    "eligible_castaway_count": 1116
+  },
+  {
+    "enabled": true,
+    "id": "votes_against_career_3plus",
+    "group": "voting",
+    "type": "votes_against_count",
+    "params": {
+      "min": 3,
+      "scope": "career"
+    },
+    "label": "3+ Votes Against (Career)",
+    "eligible_us_castaway_count": 669,
+    "eligible_castaway_count": 1075
+  },
+  {
+    "enabled": true,
+    "id": "votes_against_career_5plus",
+    "group": "voting",
+    "type": "votes_against_count",
+    "params": {
+      "min": 5,
+      "scope": "career"
+    },
+    "label": "5+ Votes Against (Career)",
+    "eligible_us_castaway_count": 534,
+    "eligible_castaway_count": 865
+  },
+  {
+    "enabled": true,
+    "id": "votes_against_career_8plus",
+    "group": "voting",
+    "type": "votes_against_count",
+    "params": {
+      "min": 8,
+      "scope": "career"
+    },
+    "label": "8+ Votes Against (Career)",
+    "eligible_us_castaway_count": 249,
+    "eligible_castaway_count": 420
+  },
+  {
+    "enabled": true,
+    "id": "votes_against_career_10plus",
+    "group": "voting",
+    "type": "votes_against_count",
+    "params": {
+      "min": 10,
+      "scope": "career"
+    },
+    "label": "10+ Votes Against (Career)",
+    "eligible_us_castaway_count": 142,
+    "eligible_castaway_count": 262
+  },
+  {
+    "enabled": true,
+    "id": "votes_against_career_12plus",
+    "group": "voting",
+    "type": "votes_against_count",
+    "params": {
+      "min": 12,
+      "scope": "career"
+    },
+    "label": "12+ Votes Against (Career)",
+    "eligible_us_castaway_count": 88,
+    "eligible_castaway_count": 175
+  },
+  {
+    "enabled": true,
+    "id": "votes_against_career_15plus",
+    "group": "voting",
+    "type": "votes_against_count",
+    "params": {
+      "min": 15,
+      "scope": "career"
+    },
+    "label": "15+ Votes Against (Career)",
+    "eligible_us_castaway_count": 54,
+    "eligible_castaway_count": 103
+  },
+  {
+    "enabled": false,
+    "id": "votes_against_season_1plus",
+    "group": "voting",
+    "type": "votes_against_count",
+    "params": {
+      "min": 1,
+      "scope": "season"
+    },
+    "label": "1+ Votes Against",
+    "eligible_us_castaway_count": 717,
+    "eligible_castaway_count": 1149
+  },
+  {
+    "enabled": true,
+    "id": "votes_against_season_2plus",
+    "group": "voting",
+    "type": "votes_against_count",
+    "params": {
+      "min": 2,
+      "scope": "season"
+    },
+    "label": "2+ Votes Against (Single Season)",
+    "eligible_us_castaway_count": 696,
+    "eligible_castaway_count": 1116
+  },
+  {
+    "enabled": true,
+    "id": "votes_against_season_3plus",
+    "group": "voting",
+    "type": "votes_against_count",
+    "params": {
+      "min": 3,
+      "scope": "season"
+    },
+    "label": "3+ Votes Against (Single Season)",
+    "eligible_us_castaway_count": 669,
+    "eligible_castaway_count": 1075
+  },
+  {
+    "enabled": true,
+    "id": "votes_against_season_4plus",
+    "group": "voting",
+    "type": "votes_against_count",
+    "params": {
+      "min": 4,
+      "scope": "season"
+    },
+    "label": "4+ Votes Against (Single Season)",
+    "eligible_us_castaway_count": 611,
+    "eligible_castaway_count": 990
+  },
+  {
+    "enabled": true,
+    "id": "votes_against_season_5plus",
+    "group": "voting",
+    "type": "votes_against_count",
+    "params": {
+      "min": 5,
+      "scope": "season"
+    },
+    "label": "5+ Votes Against (Single Season)",
+    "eligible_us_castaway_count": 528,
+    "eligible_castaway_count": 858
+  },
+  {
+    "enabled": true,
+    "id": "votes_against_season_6plus",
+    "group": "voting",
+    "type": "votes_against_count",
+    "params": {
+      "min": 6,
+      "scope": "season"
+    },
+    "label": "6+ Votes Against (Single Season)",
+    "eligible_us_castaway_count": 403,
+    "eligible_castaway_count": 660
+  },
+  {
+    "enabled": true,
+    "id": "votes_against_season_8plus",
+    "group": "voting",
+    "type": "votes_against_count",
+    "params": {
+      "min": 8,
+      "scope": "season"
+    },
+    "label": "8+ Votes Against (Single Season)",
+    "eligible_us_castaway_count": 218,
+    "eligible_castaway_count": 377
+  },
+  {
+    "enabled": true,
+    "id": "votes_against_season_10plus",
+    "group": "voting",
+    "type": "votes_against_count",
+    "params": {
+      "min": 10,
+      "scope": "season"
+    },
+    "label": "10+ Votes Against (Single Season)",
+    "eligible_us_castaway_count": 91,
+    "eligible_castaway_count": 188
+  },
+  {
+    "enabled": true,
+    "id": "votes_against_career_0",
+    "group": "voting",
+    "type": "votes_against_count",
+    "params": {
+      "min": 0,
+      "max": 0,
+      "scope": "career"
+    },
+    "label": "Zero Votes Against (Career)",
+    "eligible_us_castaway_count": 34,
+    "eligible_castaway_count": 49
+  },
+  {
+    "enabled": true,
+    "id": "votes_against_season_0",
+    "group": "voting",
+    "type": "votes_against_count",
+    "params": {
+      "min": 0,
+      "max": 0,
+      "scope": "season"
+    },
+    "label": "Zero Votes Against (Single Season)",
+    "eligible_us_castaway_count": 65,
+    "eligible_castaway_count": 83
+  },
+  {
+    "enabled": true,
+    "id": "confessionals_career_20plus",
+    "group": "confessionals",
+    "type": "confessional_count",
+    "params": {
+      "min": 20,
+      "scope": "career"
+    },
+    "label": "20+ Confessionals (Career)",
+    "eligible_us_castaway_count": 404,
+    "eligible_castaway_count": 676
+  },
+  {
+    "enabled": true,
+    "id": "confessionals_career_30plus",
+    "group": "confessionals",
+    "type": "confessional_count",
+    "params": {
+      "min": 30,
+      "scope": "career"
+    },
+    "label": "30+ Confessionals (Career)",
+    "eligible_us_castaway_count": 288,
+    "eligible_castaway_count": 506
+  },
+  {
+    "enabled": true,
+    "id": "confessionals_career_40plus",
+    "group": "confessionals",
+    "type": "confessional_count",
+    "params": {
+      "min": 40,
+      "scope": "career"
+    },
+    "label": "40+ Confessionals (Career)",
+    "eligible_us_castaway_count": 196,
+    "eligible_castaway_count": 361
+  },
+  {
+    "enabled": true,
+    "id": "confessionals_career_50plus",
+    "group": "confessionals",
+    "type": "confessional_count",
+    "params": {
+      "min": 50,
+      "scope": "career"
+    },
+    "label": "50+ Confessionals (Career)",
+    "eligible_us_castaway_count": 152,
+    "eligible_castaway_count": 265
+  },
+  {
+    "enabled": true,
+    "id": "confessionals_career_60plus",
+    "group": "confessionals",
+    "type": "confessional_count",
+    "params": {
+      "min": 60,
+      "scope": "career"
+    },
+    "label": "60+ Confessionals (Career)",
+    "eligible_us_castaway_count": 106,
+    "eligible_castaway_count": 202
+  },
+  {
+    "enabled": true,
+    "id": "confessionals_career_80plus",
+    "group": "confessionals",
+    "type": "confessional_count",
+    "params": {
+      "min": 80,
+      "scope": "career"
+    },
+    "label": "80+ Confessionals (Career)",
+    "eligible_us_castaway_count": 59,
+    "eligible_castaway_count": 124
+  },
+  {
+    "enabled": true,
+    "id": "confessionals_career_100plus",
+    "group": "confessionals",
+    "type": "confessional_count",
+    "params": {
+      "min": 100,
+      "scope": "career"
+    },
+    "label": "100+ Confessionals (Career)",
+    "eligible_us_castaway_count": 34,
+    "eligible_castaway_count": 75
+  },
+  {
+    "enabled": true,
+    "id": "confessionals_career_150plus",
+    "group": "confessionals",
+    "type": "confessional_count",
+    "params": {
+      "min": 150,
+      "scope": "career"
+    },
+    "label": "150+ Confessionals (Career)",
+    "eligible_us_castaway_count": 12,
+    "eligible_castaway_count": 21
+  },
+  {
+    "enabled": true,
+    "id": "confessionals_career_200plus",
+    "group": "confessionals",
+    "type": "confessional_count",
+    "params": {
+      "min": 200,
+      "scope": "career"
+    },
+    "label": "200+ Confessionals (Career)",
+    "eligible_us_castaway_count": 3,
+    "eligible_castaway_count": 7
+  },
+  {
+    "enabled": true,
+    "id": "confessionals_season_20plus",
+    "group": "confessionals",
+    "type": "confessional_count",
+    "params": {
+      "min": 20,
+      "scope": "season"
+    },
+    "label": "20+ Confessionals (Single Season)",
+    "eligible_us_castaway_count": 398,
+    "eligible_castaway_count": 665
+  },
+  {
+    "enabled": true,
+    "id": "confessionals_season_30plus",
+    "group": "confessionals",
+    "type": "confessional_count",
+    "params": {
+      "min": 30,
+      "scope": "season"
+    },
+    "label": "30+ Confessionals (Single Season)",
+    "eligible_us_castaway_count": 277,
+    "eligible_castaway_count": 485
+  },
+  {
+    "enabled": true,
+    "id": "confessionals_season_40plus",
+    "group": "confessionals",
+    "type": "confessional_count",
+    "params": {
+      "min": 40,
+      "scope": "season"
+    },
+    "label": "40+ Confessionals (Single Season)",
+    "eligible_us_castaway_count": 169,
+    "eligible_castaway_count": 327
+  },
+  {
+    "enabled": true,
+    "id": "confessionals_season_50plus",
+    "group": "confessionals",
+    "type": "confessional_count",
+    "params": {
+      "min": 50,
+      "scope": "season"
+    },
+    "label": "50+ Confessionals (Single Season)",
+    "eligible_us_castaway_count": 114,
+    "eligible_castaway_count": 222
+  },
+  {
+    "enabled": true,
+    "id": "confessionals_season_60plus",
+    "group": "confessionals",
+    "type": "confessional_count",
+    "params": {
+      "min": 60,
+      "scope": "season"
+    },
+    "label": "60+ Confessionals (Single Season)",
+    "eligible_us_castaway_count": 65,
+    "eligible_castaway_count": 149
+  },
+  {
+    "enabled": true,
+    "id": "confessionals_season_70plus",
+    "group": "confessionals",
+    "type": "confessional_count",
+    "params": {
+      "min": 70,
+      "scope": "season"
+    },
+    "label": "70+ Confessionals (Single Season)",
+    "eligible_us_castaway_count": 31,
+    "eligible_castaway_count": 101
+  },
+  {
+    "enabled": true,
+    "id": "confessionals_season_80plus",
+    "group": "confessionals",
+    "type": "confessional_count",
+    "params": {
+      "min": 80,
+      "scope": "season"
+    },
+    "label": "80+ Confessionals (Single Season)",
+    "eligible_us_castaway_count": 15,
+    "eligible_castaway_count": 62
+  },
+  {
+    "enabled": true,
+    "id": "confessionals_season_90plus",
+    "group": "confessionals",
+    "type": "confessional_count",
+    "params": {
+      "min": 90,
+      "scope": "season"
+    },
+    "label": "90+ Confessionals (Single Season)",
+    "eligible_us_castaway_count": 7,
+    "eligible_castaway_count": 35
+  },
+  {
+    "enabled": true,
+    "id": "confessionals_season_100plus",
+    "group": "confessionals",
+    "type": "confessional_count",
+    "params": {
+      "min": 100,
+      "scope": "season"
+    },
+    "label": "100+ Confessionals (Single Season)",
+    "eligible_us_castaway_count": 2,
+    "eligible_castaway_count": 20
+  },
+  {
+    "enabled": true,
+    "id": "placement_premerge",
+    "group": "placement",
+    "type": "season_list_nonempty",
+    "params": {
+      "field": "voted_out_pre_merge"
+    },
+    "label": "Pre-Merge Boot",
+    "tooltip": "Voted out before the merge. Boots at the modern 'Mergatory' merge tribal count as making the merge, not pre-merge.",
+    "eligible_us_castaway_count": 348,
+    "eligible_castaway_count": 577
+  },
+  {
+    "enabled": true,
+    "id": "placement_prejury",
+    "group": "placement",
+    "type": "season_list_not_covering_all_seasons",
+    "params": {
+      "field": "made_jury",
+      "exclude_if_in_fields": [
+        "made_ftc"
+      ]
+    },
+    "label": "Pre-Jury Boot",
+    "eligible_us_castaway_count": 352,
+    "eligible_castaway_count": 591
+  },
+  {
+    "enabled": true,
+    "id": "placement_nevermerge",
+    "group": "placement",
+    "type": "season_list_empty",
+    "params": {
+      "field": "made_merge"
+    },
+    "label": "Never Made the Merge",
+    "tooltip": "Never reached the merge. The modern 'Mergatory' merge episode counts as making the merge.",
+    "eligible_us_castaway_count": 279,
+    "eligible_castaway_count": 470
+  },
+  {
+    "enabled": true,
+    "id": "placement_neverjury",
+    "group": "placement",
+    "type": "season_list_empty",
+    "params": {
+      "field": "made_jury"
+    },
+    "label": "Never on the Jury",
+    "eligible_us_castaway_count": 379,
+    "eligible_castaway_count": 636
+  },
+  {
+    "enabled": true,
+    "id": "placement_preftc",
+    "group": "placement",
+    "type": "season_list_empty",
+    "params": {
+      "field": "made_ftc"
+    },
+    "label": "Never Reached Final Tribal",
+    "eligible_us_castaway_count": 626,
+    "eligible_castaway_count": 1015
+  },
+  {
+    "enabled": true,
+    "id": "placement_first_boot",
+    "group": "placement",
+    "type": "season_list_nonempty",
+    "params": {
+      "field": "first_boot_seasons"
+    },
+    "label": "First Boot",
+    "eligible_us_castaway_count": 49,
+    "eligible_castaway_count": 75
+  },
+  {
+    "enabled": true,
+    "id": "immunity_career_2plus",
+    "group": "challenges",
+    "type": "immunity_wins_count",
+    "params": {
+      "min": 2,
+      "scope": "career"
+    },
+    "label": "2+ Immunity Wins (Career)",
+    "eligible_us_castaway_count": 119,
+    "eligible_castaway_count": 179
+  },
+  {
+    "enabled": true,
+    "id": "immunity_career_3plus",
+    "group": "challenges",
+    "type": "immunity_wins_count",
+    "params": {
+      "min": 3,
+      "scope": "career"
+    },
+    "label": "3+ Immunity Wins (Career)",
+    "eligible_us_castaway_count": 58,
+    "eligible_castaway_count": 86
+  },
+  {
+    "enabled": true,
+    "id": "immunity_career_4plus",
+    "group": "challenges",
+    "type": "immunity_wins_count",
+    "params": {
+      "min": 4,
+      "scope": "career"
+    },
+    "label": "4+ Immunity Wins (Career)",
+    "eligible_us_castaway_count": 33,
+    "eligible_castaway_count": 51
+  },
+  {
+    "enabled": true,
+    "id": "immunity_career_5plus",
+    "group": "challenges",
+    "type": "immunity_wins_count",
+    "params": {
+      "min": 5,
+      "scope": "career"
+    },
+    "label": "5+ Immunity Wins (Career)",
+    "eligible_us_castaway_count": 12,
+    "eligible_castaway_count": 24
+  },
+  {
+    "enabled": true,
+    "id": "immunity_career_7plus",
+    "group": "challenges",
+    "type": "immunity_wins_count",
+    "params": {
+      "min": 7,
+      "scope": "career"
+    },
+    "label": "7+ Immunity Wins (Career)",
+    "eligible_us_castaway_count": 2,
+    "eligible_castaway_count": 6
+  },
+  {
+    "enabled": true,
+    "id": "immunity_career_10plus",
+    "group": "challenges",
+    "type": "immunity_wins_count",
+    "params": {
+      "min": 10,
+      "scope": "career"
+    },
+    "label": "10+ Immunity Wins (Career)",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 1
+  },
+  {
+    "enabled": true,
+    "id": "immunity_season_2plus",
+    "group": "challenges",
+    "type": "immunity_wins_count",
+    "params": {
+      "min": 2,
+      "scope": "season"
+    },
+    "label": "2+ Immunity Wins (Single Season)",
+    "eligible_us_castaway_count": 107,
+    "eligible_castaway_count": 167
+  },
+  {
+    "enabled": true,
+    "id": "immunity_season_3plus",
+    "group": "challenges",
+    "type": "immunity_wins_count",
+    "params": {
+      "min": 3,
+      "scope": "season"
+    },
+    "label": "3+ Immunity Wins (Single Season)",
+    "eligible_us_castaway_count": 48,
+    "eligible_castaway_count": 75
+  },
+  {
+    "enabled": true,
+    "id": "immunity_season_4plus",
+    "group": "challenges",
+    "type": "immunity_wins_count",
+    "params": {
+      "min": 4,
+      "scope": "season"
+    },
+    "label": "4+ Immunity Wins (Single Season)",
+    "eligible_us_castaway_count": 21,
+    "eligible_castaway_count": 38
+  },
+  {
+    "enabled": true,
+    "id": "immunity_season_5plus",
+    "group": "challenges",
+    "type": "immunity_wins_count",
+    "params": {
+      "min": 5,
+      "scope": "season"
+    },
+    "label": "5+ Immunity Wins (Single Season)",
+    "eligible_us_castaway_count": 6,
+    "eligible_castaway_count": 15
+  },
+  {
+    "enabled": true,
+    "id": "immunity_career_0",
+    "group": "challenges",
+    "type": "immunity_wins_count",
+    "params": {
+      "min": 0,
+      "max": 0,
+      "scope": "career"
+    },
+    "label": "0 Immunity Wins (Career)",
+    "eligible_us_castaway_count": 525,
+    "eligible_castaway_count": 843
+  },
+  {
+    "enabled": true,
+    "id": "immunity_season_0",
+    "group": "challenges",
+    "type": "immunity_wins_count",
+    "params": {
+      "min": 0,
+      "max": 0,
+      "scope": "season"
+    },
+    "label": "0 Immunity Wins (Single Season)",
+    "eligible_us_castaway_count": 588,
+    "eligible_castaway_count": 938
+  },
+  {
+    "enabled": true,
+    "id": "challenge_participated_last_gasp",
+    "group": "challenges",
+    "type": "castaway_id_in_set",
+    "params": {
+      "castaway_ids": [
+        "AU0019",
+        "AU0041",
+        "AU0042",
+        "AU0062",
+        "AU0063",
+        "AU0064",
+        "AU0065",
+        "AU0066",
+        "AU0067",
+        "AU0068",
+        "AU0069",
+        "AU0070",
+        "AU0071",
+        "AU0085",
+        "AU0086",
+        "AU0087",
+        "AU0088",
+        "AU0089",
+        "AU0090",
+        "AU0091",
+        "AU0092",
+        "AU0093",
+        "AU0094",
+        "AU0106",
+        "AU0117",
+        "AU0118",
+        "AU0119",
+        "AU0138",
+        "AU0142",
+        "AU0144",
+        "AU0145",
+        "AU0146",
+        "AU0164",
+        "AU0177",
+        "AU0183",
+        "AU0184",
+        "AU0185",
+        "AU0187",
+        "AU0188",
+        "AU0190",
+        "AU0192",
+        "AU0193",
+        "AU0195",
+        "AU0199",
+        "FI0001",
+        "NZ0034",
+        "QU0001",
+        "SA0115",
+        "SA0116",
+        "SA0117",
+        "SA0118",
+        "SA0119",
+        "SA0120",
+        "SA0121",
+        "SA0122",
+        "SA0123",
+        "SA0124",
+        "SA0125",
+        "SA0126",
+        "UK0029",
+        "UK0030",
+        "UK0031",
+        "UK0032",
+        "UK0034",
+        "UK0036",
+        "UK0037",
+        "UK0038",
+        "UK0039",
+        "UK0046",
+        "US0127",
+        "US0143",
+        "US0144",
+        "US0145",
+        "US0146",
+        "US0147",
+        "US0148",
+        "US0149",
+        "US0150",
+        "US0179",
+        "US0197",
+        "US0201",
+        "US0231",
+        "US0235",
+        "US0244",
+        "US0245",
+        "US0246",
+        "US0247",
+        "US0312",
+        "US0333",
+        "US0337",
+        "US0346",
+        "US0348",
+        "US0384",
+        "US0393",
+        "US0394",
+        "US0395",
+        "US0396",
+        "US0627",
+        "US0628",
+        "US0634",
+        "US0636",
+        "US0638",
+        "US0642",
+        "US0644",
+        "US0646",
+        "US0648",
+        "US0652",
+        "US0654",
+        "US0658",
+        "US0659",
+        "US0662"
+      ]
+    },
+    "label": "Challenge: Participated in Last Gasp",
+    "tooltip": "Participated in Last Gasp.",
+    "eligible_us_castaway_count": 42,
+    "eligible_castaway_count": 111
+  },
+  {
+    "enabled": true,
+    "id": "challenge_won_last_gasp",
+    "group": "challenges",
+    "type": "castaway_id_in_set",
+    "params": {
+      "castaway_ids": [
+        "AU0063",
+        "AU0086",
+        "AU0146",
+        "AU0183",
+        "FI0001",
+        "SA0126",
+        "UK0039",
+        "US0150",
+        "US0244",
+        "US0312",
+        "US0636",
+        "US0642",
+        "US0662"
+      ]
+    },
+    "label": "Challenge: Won Last Gasp",
+    "tooltip": "Won Last Gasp.",
+    "eligible_us_castaway_count": 6,
+    "eligible_castaway_count": 13
+  },
+  {
+    "enabled": true,
+    "id": "challenge_participated_simmotion",
+    "group": "challenges",
+    "type": "castaway_id_in_set",
+    "params": {
+      "castaway_ids": [
+        "AU0031",
+        "AU0042",
+        "AU0068",
+        "AU0090",
+        "AU0092",
+        "AU0093",
+        "AU0094",
+        "AU0132",
+        "AU0134",
+        "AU0136",
+        "AU0139",
+        "AU0155",
+        "AU0158",
+        "AU0164",
+        "AU0166",
+        "AU0169",
+        "NZ0034",
+        "SA0073",
+        "SA0077",
+        "SA0081",
+        "SA0103",
+        "SA0104",
+        "SA0105",
+        "SA0133",
+        "US0179",
+        "US0197",
+        "US0279",
+        "US0280",
+        "US0281",
+        "US0339",
+        "US0341",
+        "US0414",
+        "US0419",
+        "US0421",
+        "US0424",
+        "US0429",
+        "US0433",
+        "US0442",
+        "US0477",
+        "US0478",
+        "US0530",
+        "US0531",
+        "US0532",
+        "US0533",
+        "US0534",
+        "US0535",
+        "US0536",
+        "US0553",
+        "US0554",
+        "US0555",
+        "US0556",
+        "US0615",
+        "US0619",
+        "US0620",
+        "US0623",
+        "US0654",
+        "US0658",
+        "US0659",
+        "US0662",
+        "US0721",
+        "US0722",
+        "US0724",
+        "US0726",
+        "US0745"
+      ]
+    },
+    "label": "Challenge: Participated in Simmotion",
+    "tooltip": "Participated in Simmotion.",
+    "eligible_us_castaway_count": 40,
+    "eligible_castaway_count": 64
+  },
+  {
+    "enabled": true,
+    "id": "challenge_won_simmotion",
+    "group": "challenges",
+    "type": "castaway_id_in_set",
+    "params": {
+      "castaway_ids": [
+        "AU0042",
+        "AU0092",
+        "AU0139",
+        "AU0166",
+        "SA0077",
+        "SA0081",
+        "SA0104",
+        "US0281",
+        "US0339",
+        "US0433",
+        "US0442",
+        "US0477",
+        "US0534",
+        "US0535",
+        "US0536",
+        "US0556",
+        "US0623",
+        "US0654",
+        "US0726"
+      ]
+    },
+    "label": "Challenge: Won Simmotion",
+    "tooltip": "Won Simmotion.",
+    "eligible_us_castaway_count": 12,
+    "eligible_castaway_count": 19
+  },
+  {
+    "enabled": true,
+    "id": "challenge_participated_gross_food_challenge",
+    "group": "challenges",
+    "type": "castaway_id_in_set",
+    "params": {
+      "castaway_ids": [
+        "SA0021",
+        "SA0022",
+        "SA0023",
+        "SA0024",
+        "SA0025",
+        "SA0026",
+        "SA0027",
+        "SA0028",
+        "SA0029",
+        "SA0030",
+        "UK0002",
+        "UK0003",
+        "UK0004",
+        "UK0005",
+        "UK0006",
+        "UK0007",
+        "UK0008",
+        "UK0009",
+        "UK0010",
+        "UK0011",
+        "UK0012",
+        "UK0013",
+        "UK0014",
+        "UK0015",
+        "UK0016",
+        "UK0020",
+        "UK0021",
+        "UK0022",
+        "UK0023",
+        "UK0024",
+        "UK0025",
+        "UK0026",
+        "UK0027",
+        "UK0028",
+        "US0002",
+        "US0003",
+        "US0004",
+        "US0005",
+        "US0006",
+        "US0007",
+        "US0008",
+        "US0009",
+        "US0010",
+        "US0011",
+        "US0012",
+        "US0013",
+        "US0014",
+        "US0015",
+        "US0016",
+        "US0018",
+        "US0019",
+        "US0020",
+        "US0021",
+        "US0022",
+        "US0023",
+        "US0024",
+        "US0025",
+        "US0026",
+        "US0027",
+        "US0028",
+        "US0029",
+        "US0030",
+        "US0031",
+        "US0032",
+        "US0034",
+        "US0035",
+        "US0036",
+        "US0037",
+        "US0038",
+        "US0039",
+        "US0040",
+        "US0041",
+        "US0042",
+        "US0043",
+        "US0044",
+        "US0045",
+        "US0046",
+        "US0047",
+        "US0048",
+        "US0050",
+        "US0051",
+        "US0052",
+        "US0053",
+        "US0054",
+        "US0055",
+        "US0056",
+        "US0057",
+        "US0058",
+        "US0059",
+        "US0060",
+        "US0061",
+        "US0062",
+        "US0063",
+        "US0064",
+        "US0071",
+        "US0075",
+        "US0076",
+        "US0077",
+        "US0078",
+        "US0079",
+        "US0080",
+        "US0089",
+        "US0090",
+        "US0091",
+        "US0092",
+        "US0093",
+        "US0094",
+        "US0095",
+        "US0096",
+        "US0101",
+        "US0102",
+        "US0103",
+        "US0104",
+        "US0105",
+        "US0106",
+        "US0107",
+        "US0108",
+        "US0109",
+        "US0110",
+        "US0111",
+        "US0112",
+        "US0141",
+        "US0142",
+        "US0143",
+        "US0144",
+        "US0145",
+        "US0146",
+        "US0147",
+        "US0148",
+        "US0149",
+        "US0150",
+        "US0205",
+        "US0206",
+        "US0207",
+        "US0208",
+        "US0209",
+        "US0210",
+        "US0211",
+        "US0212",
+        "US0213",
+        "US0214",
+        "US0215",
+        "US0216",
+        "US0217",
+        "US0218",
+        "US0219",
+        "US0220",
+        "US0221",
+        "US0227",
+        "US0228",
+        "US0229",
+        "US0230",
+        "US0231",
+        "US0232",
+        "US0233",
+        "US0234",
+        "US0235",
+        "US0236",
+        "US0237",
+        "US0246",
+        "US0259",
+        "US0274",
+        "US0280",
+        "US0287",
+        "US0288",
+        "US0289",
+        "US0290",
+        "US0291",
+        "US0292",
+        "US0293",
+        "US0294",
+        "US0295",
+        "US0296",
+        "US0297",
+        "US0298",
+        "US0299",
+        "US0300",
+        "US0301",
+        "US0312",
+        "US0333",
+        "US0337",
+        "US0346",
+        "US0348",
+        "US0358",
+        "US0383",
+        "US0384",
+        "US0393",
+        "US0394",
+        "US0395",
+        "US0396",
+        "US0402",
+        "US0403",
+        "US0404",
+        "US0405",
+        "US0406",
+        "US0419",
+        "US0421",
+        "US0422",
+        "US0423",
+        "US0429",
+        "US0433",
+        "US0439",
+        "US0451",
+        "US0525",
+        "US0526",
+        "US0527",
+        "US0528",
+        "US0529",
+        "US0530",
+        "US0531",
+        "US0532",
+        "US0533",
+        "US0534",
+        "US0535",
+        "US0536"
+      ]
+    },
+    "label": "Challenge: Participated in a Gross Food Challenge",
+    "tooltip": "Participated in a Gross Food Challenge.",
+    "eligible_us_castaway_count": 181,
+    "eligible_castaway_count": 215
+  },
+  {
+    "enabled": true,
+    "id": "challenge_won_gross_food_challenge",
+    "group": "challenges",
+    "type": "castaway_id_in_set",
+    "params": {
+      "castaway_ids": [
+        "SA0022",
+        "SA0024",
+        "SA0026",
+        "SA0028",
+        "UK0004",
+        "UK0010",
+        "UK0011",
+        "UK0012",
+        "UK0013",
+        "UK0014",
+        "UK0015",
+        "UK0025",
+        "UK0026",
+        "UK0027",
+        "UK0028",
+        "US0003",
+        "US0005",
+        "US0012",
+        "US0013",
+        "US0014",
+        "US0015",
+        "US0016",
+        "US0021",
+        "US0022",
+        "US0023",
+        "US0024",
+        "US0026",
+        "US0028",
+        "US0029",
+        "US0035",
+        "US0036",
+        "US0037",
+        "US0038",
+        "US0041",
+        "US0042",
+        "US0043",
+        "US0044",
+        "US0045",
+        "US0053",
+        "US0056",
+        "US0057",
+        "US0058",
+        "US0059",
+        "US0061",
+        "US0062",
+        "US0063",
+        "US0077",
+        "US0095",
+        "US0104",
+        "US0105",
+        "US0106",
+        "US0108",
+        "US0110",
+        "US0142",
+        "US0143",
+        "US0145",
+        "US0146",
+        "US0147",
+        "US0148",
+        "US0149",
+        "US0150",
+        "US0206",
+        "US0207",
+        "US0211",
+        "US0213",
+        "US0215",
+        "US0216",
+        "US0217",
+        "US0219",
+        "US0220",
+        "US0228",
+        "US0231",
+        "US0232",
+        "US0233",
+        "US0280",
+        "US0288",
+        "US0290",
+        "US0291",
+        "US0292",
+        "US0293",
+        "US0294",
+        "US0295",
+        "US0296",
+        "US0298",
+        "US0348",
+        "US0358",
+        "US0419",
+        "US0429",
+        "US0433",
+        "US0439",
+        "US0451",
+        "US0533"
+      ]
+    },
+    "label": "Challenge: Won a Gross Food Challenge",
+    "tooltip": "Won a Gross Food Challenge.",
+    "eligible_us_castaway_count": 77,
+    "eligible_castaway_count": 92
+  },
+  {
+    "enabled": true,
+    "id": "played_in_australia",
+    "group": "season_groupings",
+    "type": "season_group_played",
+    "params": {
+      "seasons": [
+        "AU06",
+        "AU07",
+        "US02"
+      ]
+    },
+    "label": "Location: Australia",
+    "eligible_us_castaway_count": 17,
+    "eligible_castaway_count": 64
+  },
+  {
+    "enabled": true,
+    "id": "played_in_brazil",
+    "group": "season_groupings",
+    "type": "season_group_played",
+    "params": {
+      "seasons": [
+        "US06",
+        "US18"
+      ]
+    },
+    "label": "Location: Brazil",
+    "eligible_us_castaway_count": 32,
+    "eligible_castaway_count": 32
+  },
+  {
+    "enabled": true,
+    "id": "played_in_cambodia",
+    "group": "season_groupings",
+    "type": "season_group_played",
+    "params": {
+      "seasons": [
+        "US31",
+        "US32"
+      ]
+    },
+    "label": "Location: Cambodia",
+    "eligible_us_castaway_count": 38,
+    "eligible_castaway_count": 38
+  },
+  {
+    "enabled": true,
+    "id": "played_in_fiji",
+    "group": "season_groupings",
+    "type": "season_group_played",
+    "params": {
+      "seasons": [
+        "AU03",
+        "AU04",
+        "AU05",
+        "US14",
+        "US33",
+        "US34",
+        "US35",
+        "US36",
+        "US37",
+        "US38",
+        "US39",
+        "US40",
+        "US41",
+        "US42",
+        "US43",
+        "US44",
+        "US45",
+        "US46",
+        "US47",
+        "US48",
+        "US49",
+        "US50"
+      ]
+    },
+    "label": "Location: Fiji",
+    "eligible_us_castaway_count": 330,
+    "eligible_castaway_count": 389
+  },
+  {
+    "enabled": true,
+    "id": "played_in_malaysia",
+    "group": "season_groupings",
+    "type": "season_group_played",
+    "params": {
+      "seasons": [
+        "SA02",
+        "SA05",
+        "UK01",
+        "US01"
+      ]
+    },
+    "label": "Location: Malaysia",
+    "eligible_us_castaway_count": 16,
+    "eligible_castaway_count": 68
+  },
+  {
+    "enabled": true,
+    "id": "played_in_nicaragua",
+    "group": "season_groupings",
+    "type": "season_group_played",
+    "params": {
+      "seasons": [
+        "NZ01",
+        "US21",
+        "US22",
+        "US29",
+        "US30"
+      ]
+    },
+    "label": "Location: Nicaragua",
+    "eligible_us_castaway_count": 74,
+    "eligible_castaway_count": 90
+  },
+  {
+    "enabled": true,
+    "id": "played_in_palau",
+    "group": "season_groupings",
+    "type": "season_group_played",
+    "params": {
+      "seasons": [
+        "US10",
+        "US16"
+      ]
+    },
+    "label": "Location: Palau",
+    "eligible_us_castaway_count": 40,
+    "eligible_castaway_count": 40
+  },
+  {
+    "enabled": true,
+    "id": "played_in_panama",
+    "group": "season_groupings",
+    "type": "season_group_played",
+    "params": {
+      "seasons": [
+        "SA01",
+        "UK02",
+        "US07",
+        "US08",
+        "US12"
+      ]
+    },
+    "label": "Location: Panama",
+    "eligible_us_castaway_count": 49,
+    "eligible_castaway_count": 75
+  },
+  {
+    "enabled": true,
+    "id": "played_in_philippines",
+    "group": "season_groupings",
+    "type": "season_group_played",
+    "params": {
+      "seasons": [
+        "SA06",
+        "US25",
+        "US26",
+        "US27",
+        "US28"
+      ]
+    },
+    "label": "Location: Philippines",
+    "eligible_us_castaway_count": 75,
+    "eligible_castaway_count": 93
+  },
+  {
+    "enabled": true,
+    "id": "played_in_samoa",
+    "group": "season_groupings",
+    "type": "season_group_played",
+    "params": {
+      "seasons": [
+        "AU01",
+        "AU02",
+        "AU08",
+        "AU09",
+        "AU10",
+        "AU11",
+        "AU12",
+        "SA07",
+        "US19",
+        "US20",
+        "US23",
+        "US24"
+      ]
+    },
+    "label": "Location: Samoa",
+    "eligible_us_castaway_count": 75,
+    "eligible_castaway_count": 241
+  },
+  {
+    "enabled": true,
+    "id": "played_in_south_africa",
+    "group": "season_groupings",
+    "type": "season_group_played",
+    "params": {
+      "seasons": [
+        "SA08",
+        "SA09"
+      ]
+    },
+    "label": "Location: South Africa",
+    "eligible_us_castaway_count": 0,
+    "eligible_castaway_count": 36
+  },
+  {
+    "enabled": true,
+    "id": "played_in_thailand",
+    "group": "season_groupings",
+    "type": "season_group_played",
+    "params": {
+      "seasons": [
+        "NZ02",
+        "US05"
+      ]
+    },
+    "label": "Location: Thailand",
+    "eligible_us_castaway_count": 16,
+    "eligible_castaway_count": 34
+  },
+  {
+    "enabled": true,
+    "id": "played_in_africa",
+    "group": "season_groupings",
+    "type": "season_group_played",
+    "params": {
+      "seasons": [
+        "US03",
+        "US17",
+        "SA03",
+        "SA04",
+        "SA08",
+        "SA09"
+      ]
+    },
+    "label": "Location: Africa",
+    "tooltip": "Played on a season located in Gabon, Kenya, South Africa, or Tanzania",
+    "eligible_us_castaway_count": 34,
+    "eligible_castaway_count": 106
+  },
+  {
+    "enabled": true,
+    "id": "played_in_central_america",
+    "group": "season_groupings",
+    "type": "season_group_played",
+    "params": {
+      "seasons": [
+        "NZ01",
+        "SA01",
+        "UK02",
+        "UK03",
+        "US07",
+        "US08",
+        "US11",
+        "US12",
+        "US21",
+        "US22",
+        "US29",
+        "US30"
+      ]
+    },
+    "label": "Location: Central America",
+    "tooltip": "Played on a season located in the Dominican Republic, Guatemala, Nicaragua, or Panama",
+    "eligible_us_castaway_count": 140,
+    "eligible_castaway_count": 200
+  },
+  {
+    "enabled": true,
+    "id": "played_in_mainland_asia",
+    "group": "season_groupings",
+    "type": "season_group_played",
+    "params": {
+      "seasons": [
+        "NZ02",
+        "US05",
+        "US15",
+        "US31",
+        "US32"
+      ]
+    },
+    "label": "Location: Mainland Asia",
+    "tooltip": "Played on a season located in Cambodia, China, or Thailand",
+    "eligible_us_castaway_count": 69,
+    "eligible_castaway_count": 87
+  },
+  {
+    "enabled": true,
+    "id": "played_inland",
+    "group": "season_groupings",
+    "type": "season_group_played",
+    "params": {
+      "seasons": [
+        "US02",
+        "US03",
+        "US06",
+        "US11",
+        "US15",
+        "US17",
+        "US18",
+        "AU06"
+      ]
+    },
+    "label": "Played Inland",
+    "tooltip": "Played on a season that was not located along the ocean",
+    "eligible_us_castaway_count": 116,
+    "eligible_castaway_count": 140
+  },
+  {
+    "enabled": true,
+    "id": "format_fans_vs_favorites",
+    "group": "season_groupings",
+    "type": "season_group_played",
+    "params": {
+      "seasons": [
+        "US16",
+        "US26"
+      ]
+    },
+    "label": "Format: Fans vs. Favorites Season",
+    "tooltip": "Played on Fans vs. Favorites seasons (US16, US26).",
+    "eligible_us_castaway_count": 39,
+    "eligible_castaway_count": 39
+  },
+  {
+    "enabled": true,
+    "id": "format_blood_vs_water",
+    "group": "season_groupings",
+    "type": "season_group_played",
+    "params": {
+      "seasons": [
+        "US27",
+        "US29",
+        "AU07"
+      ]
+    },
+    "label": "Format: Blood vs. Water Season",
+    "tooltip": "Played on a Blood vs. Water format season.",
+    "eligible_us_castaway_count": 39,
+    "eligible_castaway_count": 62
+  },
+  {
+    "enabled": true,
+    "id": "format_battle_of_the_sexes",
+    "group": "season_groupings",
+    "type": "season_group_played",
+    "params": {
+      "seasons": [
+        "US06",
+        "US09",
+        "US24"
+      ]
+    },
+    "label": "Format: Battle of the Sexes Season",
+    "tooltip": "Played on Battle of the Sexes seasons (US06, US09, US24).",
+    "eligible_us_castaway_count": 52,
+    "eligible_castaway_count": 52
+  },
+  {
+    "enabled": true,
+    "id": "format_new_era",
+    "group": "season_groupings",
+    "type": "season_group_played",
+    "params": {
+      "seasons": [
+        "US41",
+        "US42",
+        "US43",
+        "US44",
+        "US45",
+        "US46",
+        "US47",
+        "US48",
+        "US49",
+        "US50"
+      ]
+    },
+    "label": "Format: New Era Season",
+    "tooltip": "Played on U.S. New Era seasons (US41-US50).",
+    "eligible_us_castaway_count": 173,
+    "eligible_castaway_count": 173
+  },
+  {
+    "enabled": true,
+    "id": "format_re_entry",
+    "group": "season_groupings",
+    "type": "season_group_played",
+    "params": {
+      "seasons": [
+        "US40",
+        "US38",
+        "US27",
+        "US23",
+        "US22",
+        "US07",
+        "AU07",
+        "AU06",
+        "AU05",
+        "AU04",
+        "AU03",
+        "SA01",
+        "NZ01"
+      ]
+    },
+    "label": "Format: Re-Entry Season",
+    "tooltip": "Played on a season with a re-entry/twist mechanic.",
+    "eligible_us_castaway_count": 105,
+    "eligible_castaway_count": 240
+  },
+  {
+    "enabled": true,
+    "id": "format_all_returning_players",
+    "group": "season_groupings",
+    "type": "season_group_played",
+    "params": {
+      "seasons": [
+        "AU05",
+        "AU11",
+        "SA09",
+        "US08",
+        "US20",
+        "US31",
+        "US34",
+        "US40",
+        "US50"
+      ]
+    },
+    "label": "Format: All Returning Players Season",
+    "tooltip": "Played on a season where every castaway was a returning player.",
+    "eligible_us_castaway_count": 97,
+    "eligible_castaway_count": 150
+  },
+  {
+    "enabled": true,
+    "id": "format_mix_of_new_and_returning_players",
+    "group": "season_groupings",
+    "type": "season_group_played",
+    "params": {
+      "seasons": [
+        "AU03",
+        "AU04",
+        "AU07",
+        "AU08",
+        "AU12",
+        "US11",
+        "US16",
+        "US22",
+        "US23",
+        "US25",
+        "US26",
+        "US27",
+        "US38",
+        "US45"
+      ]
+    },
+    "label": "Format: Mix of New & Returning Players",
+    "tooltip": "Played on a season with both new and returning castaways.",
+    "eligible_us_castaway_count": 159,
+    "eligible_castaway_count": 268
+  },
+  {
+    "enabled": true,
+    "id": "format_all_new_players",
+    "group": "season_groupings",
+    "type": "season_group_played",
+    "params": {
+      "seasons": [
+        "AU01",
+        "AU02",
+        "AU06",
+        "AU09",
+        "AU10",
+        "NZ01",
+        "NZ02",
+        "SA01",
+        "SA02",
+        "SA03",
+        "SA04",
+        "SA05",
+        "SA06",
+        "SA07",
+        "SA08",
+        "UK01",
+        "UK02",
+        "UK03",
+        "US01",
+        "US02",
+        "US03",
+        "US04",
+        "US05",
+        "US06",
+        "US07",
+        "US09",
+        "US10",
+        "US12",
+        "US13",
+        "US14",
+        "US15",
+        "US17",
+        "US18",
+        "US19",
+        "US21",
+        "US24",
+        "US28",
+        "US29",
+        "US30",
+        "US32",
+        "US33",
+        "US35",
+        "US36",
+        "US37",
+        "US39",
+        "US41",
+        "US42",
+        "US43",
+        "US44",
+        "US46",
+        "US47",
+        "US48",
+        "US49"
+      ]
+    },
+    "label": "Format: All New Players Season",
+    "tooltip": "Played on a season where every castaway was new to Survivor.",
+    "eligible_us_castaway_count": 627,
+    "eligible_castaway_count": 973
+  }
+]

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Castaway Cross Updates</title>
+  <meta name="robots" content="index,follow">
+  <link rel="alternate" type="application/rss+xml" title="Castaway Cross Updates RSS" href="feed.xml">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f9fafb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #4b5563;
+      --border: #d1d5db;
+      --link: #1d4ed8;
+      --accent: #1d4ed8;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111827;
+        --card: #1f2937;
+        --text: #f9fafb;
+        --muted: #d1d5db;
+        --border: #374151;
+        --link: #93c5fd;
+        --accent: #93c5fd;
+      }
+    }
+    body {
+      margin: 0;
+      font-family: Inter, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    main {
+      max-width: 760px;
+      margin: 32px auto;
+      padding: 0 16px 32px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    }
+    .heading-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 22px;
+      line-height: 1.3;
+    }
+    .rss-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      line-height: 1;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 700;
+      font-size: 12px;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .rss-link:hover,
+    .rss-link:focus-visible {
+      opacity: 0.85;
+    }
+    #updates-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .update-item {
+      padding-top: 10px;
+      border-top: 1px solid var(--border);
+    }
+    .update-item:first-child {
+      padding-top: 0;
+      border-top: none;
+    }
+    .update-title {
+      color: var(--text);
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .update-title:hover {
+      text-decoration: underline;
+    }
+    .update-summary,
+    .update-meta {
+      margin: 4px 0 0;
+      font-size: 13px;
+      line-height: 1.4;
+      color: var(--muted);
+    }
+    .update-summary {
+      white-space: pre-line;
+    }
+    .update-meta {
+      opacity: 0.8;
+    }
+    .back-link {
+      display: block;
+      margin-top: 20px;
+      font-size: 14px;
+      color: var(--link);
+    }
+    #updates-empty {
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="card">
+      <div class="heading-row">
+        <h1>All Updates</h1>
+        <a class="rss-link" href="feed.xml">RSS</a>
+      </div>
+      <p id="updates-empty" hidden>No updates posted yet. Check back soon.</p>
+      <ul id="updates-list"></ul>
+      <a class="back-link" href="/">← Back to Castaway Cross</a>
+    </div>
+  </main>
+  <script>
+    function formatUpdateDate(isoDateString) {
+      const date = new Date(isoDateString);
+      if (Number.isNaN(date.getTime())) return "";
+      return date.toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+      });
+    }
+
+    async function loadUpdates() {
+      const list = document.getElementById("updates-list");
+      const empty = document.getElementById("updates-empty");
+
+      try {
+        const response = await fetch("frontend/data/updates.json", { cache: "no-cache" });
+        if (!response.ok) throw new Error(`Unexpected response (${response.status})`);
+        const updates = await response.json();
+
+        if (!Array.isArray(updates) || updates.length === 0) {
+          empty.hidden = false;
+          return;
+        }
+
+        for (const update of updates) {
+          const item = document.createElement("li");
+          item.className = "update-item";
+
+          const title = document.createElement("a");
+          title.className = "update-title";
+          title.href = update.url;
+          title.textContent = update.title;
+
+          const summary = document.createElement("p");
+          summary.className = "update-summary";
+          summary.textContent = update.summary;
+
+          const published = formatUpdateDate(update.publishedAt);
+          if (published) {
+            const meta = document.createElement("p");
+            meta.className = "update-meta";
+            meta.textContent = `Published ${published}`;
+            item.appendChild(title);
+            item.appendChild(summary);
+            item.appendChild(meta);
+          } else {
+            item.appendChild(title);
+            item.appendChild(summary);
+          }
+
+          list.appendChild(item);
+        }
+      } catch (error) {
+        console.error("[updates] Failed to load updates.", error);
+        empty.textContent = "Unable to load updates right now.";
+        empty.hidden = false;
+      }
+    }
+
+    void loadUpdates();
+  </script>
+</body>
+</html>

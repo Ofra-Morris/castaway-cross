@@ -1,0 +1,66 @@
+[
+  {
+    "id": "2026-05-31-s50-au-redemption",
+    "title": "Survivor 50 and AU Survivor: Redemption data added",
+    "url": "https://castawaycross.com/#updates",
+    "summary": "Full gameplay data for Survivor 50: In the Hands of the Fans and Australian Survivor: Redemption is now live! Tribal councils, challenges, placements, and advantages will all be reflected in grid eligibility. New categories also include Found and Received categories for the Billie Eilish Boomerang Idol, plus updated tribe colors for both seasons.",
+    "author": "Castaway Cross",
+    "publishedAt": "2026-05-31T00:00:00.000Z"
+  },
+  {
+    "id": "2026-05-28-results-rarity-percentages",
+    "title": "Full rarity percentages on the results screen",
+    "url": "https://castawaycross.com/#updates",
+    "summary": "The results screen now gives you the option to view eligible players alphabetically or by percentage of players who picked each castaway for each cell, so you can see exactly how common or rare each of your answers was relative to the field.",
+    "author": "Castaway Cross",
+    "publishedAt": "2026-05-28T00:00:00.000Z"
+  },
+  {
+    "id": "2026-05-20-headshots",
+    "title": "Castaway headshots added",
+    "url": "https://castawaycross.com/#updates",
+    "summary": "Castaway headshots are now displayed on completed result cells, so you can put a face to the name after each guess.",
+    "author": "Castaway Cross",
+    "publishedAt": "2026-05-20T00:00:00.000Z"
+  },
+  {
+    "id": "2026-05-08-rarity-scores",
+    "title": "Rarity scores added",
+    "url": "https://castawaycross.com/#updates",
+    "summary": "Each correct answer shows a rarity score based on the percentage of players who chose that castaway for that cell. Chase the crowd for a high score, or go low with deep cuts from Survivor history!",
+    "author": "Castaway Cross",
+    "publishedAt": "2026-05-08T00:00:00.000Z"
+  },
+  {
+    "id": "2026-04-26-rss-launch",
+    "title": "Updates section + RSS feed launched",
+    "url": "https://castawaycross.com/#updates",
+    "summary": "Added a new updates section and a public RSS feed so players can follow changes to the site.",
+    "author": "Castaway Cross",
+    "publishedAt": "2026-04-26T00:00:00.000Z"
+  },
+  {
+    "id": "2026-04-14-results-screen-updates",
+    "title": "Results screen updates",
+    "url": "https://castawaycross.com/#updates",
+    "summary": "Improved the results screen by adding country flags next to each castaway's name and linking US contestants to their respective pages on Survivor-Reference.",
+    "author": "Castaway Cross",
+    "publishedAt": "2026-04-14T00:00:00.000Z"
+  },
+  {
+    "id": "2026-04-04-new-categories",
+    "title": "New categories added",
+    "url": "https://castawaycross.com/#updates",
+    "summary": "Added the following new categories for daily, random, and custom puzzles:\n- One-Time Player\n- No Tribals Before Merge\n- Played as a Teen\n- Played in Their 20s/30s/40s/50s/60s",
+    "author": "Castaway Cross",
+    "publishedAt": "2026-04-04T00:00:00.000Z"
+  },
+  {
+    "id": "2026-02-19-site-launch",
+    "title": "Castaway Cross Site Launch",
+    "url": "https://castawaycross.com/#updates",
+    "summary": "Launched site for public release.",
+    "author": "Castaway Cross",
+    "publishedAt": "2026-02-19T00:00:00.000Z"
+  }
+]

@@ -1,0 +1,287 @@
+{
+  "schemaVersion": "1",
+  "generatedAt": "2026-09-05T13:59:33.445Z",
+  "puzzleDate": "2026-09-04",
+  "rows": [
+    "placement_runner_up",
+    "played_inland",
+    "held_steal_a_vote"
+  ],
+  "cols": [
+    "held_hidden_immunity_idol",
+    "votes_against_season_4plus",
+    "confessionals_career_100plus"
+  ],
+  "cells": {
+    "0,0": {
+      "topAnswers": [
+        {
+          "name": "boston rob",
+          "count": 6,
+          "correctCount": 6
+        },
+        {
+          "name": "stephen",
+          "count": 4,
+          "correctCount": 4
+        },
+        {
+          "name": "russell",
+          "count": 4,
+          "correctCount": 4
+        },
+        {
+          "name": "eva",
+          "count": 4,
+          "correctCount": 4
+        },
+        {
+          "name": "ozzy",
+          "count": 3,
+          "correctCount": 3
+        }
+      ],
+      "totalGuesses": 44
+    },
+    "0,1": {
+      "topAnswers": [
+        {
+          "name": "amanda",
+          "count": 7,
+          "correctCount": 7
+        },
+        {
+          "name": "russell",
+          "count": 4,
+          "correctCount": 4
+        },
+        {
+          "name": "matthew",
+          "count": 4,
+          "correctCount": 4
+        },
+        {
+          "name": "spencer",
+          "count": 3,
+          "correctCount": 3
+        },
+        {
+          "name": "sam",
+          "count": 2,
+          "correctCount": 2
+        }
+      ],
+      "totalGuesses": 41
+    },
+    "0,2": {
+      "topAnswers": [
+        {
+          "name": "boston rob",
+          "count": 10,
+          "correctCount": 10
+        },
+        {
+          "name": "russell",
+          "count": 8,
+          "correctCount": 8
+        },
+        {
+          "name": "aubry",
+          "count": 6,
+          "correctCount": 6
+        },
+        {
+          "name": "coach",
+          "count": 5,
+          "correctCount": 5
+        },
+        {
+          "name": "parvati",
+          "count": 3,
+          "correctCount": 3
+        }
+      ],
+      "totalGuesses": 41
+    },
+    "1,0": {
+      "topAnswers": [
+        {
+          "name": "james",
+          "count": 13,
+          "correctCount": 13
+        },
+        {
+          "name": "sugar",
+          "count": 5,
+          "correctCount": 5
+        },
+        {
+          "name": "boston rob",
+          "count": 4,
+          "correctCount": 0
+        },
+        {
+          "name": "kez",
+          "count": 3,
+          "correctCount": 3
+        },
+        {
+          "name": "j.t.",
+          "count": 3,
+          "correctCount": 3
+        }
+      ],
+      "totalGuesses": 39
+    },
+    "1,1": {
+      "topAnswers": [
+        {
+          "name": "amanda",
+          "count": 5,
+          "correctCount": 5
+        },
+        {
+          "name": "jeff",
+          "count": 4,
+          "correctCount": 4
+        },
+        {
+          "name": "corinne",
+          "count": 4,
+          "correctCount": 4
+        },
+        {
+          "name": "tyson",
+          "count": 3,
+          "correctCount": 3
+        },
+        {
+          "name": "tina",
+          "count": 2,
+          "correctCount": 2
+        }
+      ],
+      "totalGuesses": 37
+    },
+    "1,2": {
+      "topAnswers": [
+        {
+          "name": "colby",
+          "count": 12,
+          "correctCount": 12
+        },
+        {
+          "name": "boston rob",
+          "count": 6,
+          "correctCount": 0
+        },
+        {
+          "name": "coach",
+          "count": 4,
+          "correctCount": 4
+        },
+        {
+          "name": "jerri",
+          "count": 3,
+          "correctCount": 3
+        },
+        {
+          "name": "amanda",
+          "count": 3,
+          "correctCount": 0
+        }
+      ],
+      "totalGuesses": 36
+    },
+    "2,0": {
+      "topAnswers": [
+        {
+          "name": "sarah",
+          "count": 8,
+          "correctCount": 8
+        },
+        {
+          "name": "drea",
+          "count": 4,
+          "correctCount": 0
+        },
+        {
+          "name": "aubry",
+          "count": 4,
+          "correctCount": 0
+        },
+        {
+          "name": "stephen",
+          "count": 2,
+          "correctCount": 2
+        },
+        {
+          "name": "heidi",
+          "count": 2,
+          "correctCount": 0
+        }
+      ],
+      "totalGuesses": 27
+    },
+    "2,1": {
+      "topAnswers": [
+        {
+          "name": "stephen",
+          "count": 9,
+          "correctCount": 9
+        },
+        {
+          "name": "dan",
+          "count": 5,
+          "correctCount": 0
+        },
+        {
+          "name": "stephenie",
+          "count": 3,
+          "correctCount": 3
+        },
+        {
+          "name": "myles",
+          "count": 3,
+          "correctCount": 0
+        },
+        {
+          "name": "tai",
+          "count": 2,
+          "correctCount": 0
+        }
+      ],
+      "totalGuesses": 29
+    },
+    "2,2": {
+      "topAnswers": [
+        {
+          "name": "sarah",
+          "count": 10,
+          "correctCount": 10
+        },
+        {
+          "name": "stephenie",
+          "count": 5,
+          "correctCount": 5
+        },
+        {
+          "name": "debbie",
+          "count": 4,
+          "correctCount": 0
+        },
+        {
+          "name": "shonee",
+          "count": 3,
+          "correctCount": 3
+        },
+        {
+          "name": "stephen",
+          "count": 2,
+          "correctCount": 2
+        }
+      ],
+      "totalGuesses": 28
+    }
+  }
+}

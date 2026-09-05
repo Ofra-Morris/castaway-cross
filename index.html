@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Castaway Cross</title>
+  <meta name="description" content="Play Castaway Cross, a Survivor-themed logic puzzle game with daily and random boards.">
+  <meta name="robots" content="index,follow">
+  <meta name="referrer" content="origin">
+  <link rel="canonical" href="https://castawaycross.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://castawaycross.com/">
+  <meta property="og:site_name" content="Castaway Cross">
+  <meta property="og:title" content="Castaway Cross">
+  <meta property="og:description" content="Play Castaway Cross, a Survivor-themed logic puzzle game with daily and random boards.">
+  <meta property="og:image" content="https://castawaycross.com/assets/images/castaway-cross-banner.png">
+  <meta property="og:image:alt" content="Castaway Cross logo">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="https://castawaycross.com/">
+  <meta name="twitter:title" content="Castaway Cross">
+  <meta name="twitter:description" content="Play Castaway Cross, a Survivor-themed logic puzzle game with daily and random boards.">
+  <meta name="twitter:image" content="https://castawaycross.com/assets/images/castaway-cross-banner.png">
+  <link rel="alternate" type="application/rss+xml" title="Castaway Cross Updates RSS" href="feed.xml">
+
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; connect-src 'self' https://www.castawaycross.com;">
+
+<!-- Favicon for modern browsers -->
+<link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+<!-- Fallback for legacy browsers -->
+<link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+<!-- iOS home screen icon -->
+<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- App styles -->
+  <link rel="preload" href="assets/fonts/survivant.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="assets/styles/frontend.css?v=1bcf2a6">
+</head>
+<body>
+
+  <header>
+    <!-- Logo Lockup -->
+    <div id="logo-lockup">
+      <h1 class="logo-title">Castaway Cross</h1>
+      <div class="logo-subtitle">A Survivor Grid Game</div>
+    </div>
+
+    <!-- Controls: Random Puzzle / Daily Puzzle -->
+    <div class="controls">
+      <button id="daily-btn">Daily Puzzle</button>
+      <button id="random-btn">Random Puzzle</button>
+      <button id="custom-btn">Custom Puzzle</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="status-toast" role="status" aria-live="polite"></div>
+    <div id="daily-progress-note" aria-live="polite"></div>
+    <div id="puzzle-date-label" aria-live="polite"></div>
+
+    <!-- Status Container: Guesses + Theme Toggle -->
+    <div class="status-container">
+      <div id="guesses">Guesses Remaining: 9</div>
+      <button id="theme-toggle" aria-label="Toggle Dark Mode">☀️</button>
+      <div class="random-settings-container">
+        <button id="random-settings-btn" aria-expanded="false" aria-controls="random-settings-panel" aria-label="Random Settings">⚙️</button>
+        <section id="random-settings-panel" hidden>
+          <h2>Random Puzzle Settings</h2>
+          <p>Exclude category types or individual categories from random puzzle generation.</p>
+          <details open>
+            <summary>Difficulty</summary>
+            <div id="random-difficulty-filters" class="settings-checkbox-list"></div>
+          </details>
+          <details>
+            <summary>Exclude by category type</summary>
+            <div id="random-type-filters" class="settings-checkbox-list"></div>
+          </details>
+          <details>
+            <summary>Exclude specific categories</summary>
+            <div id="random-category-filters" class="settings-checkbox-list"></div>
+          </details>
+          <div class="settings-actions">
+            <button id="random-settings-save-btn">Save &amp; Generate Random</button>
+            <button id="random-settings-close-btn">Close</button>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Main 3×3 Grid -->
+    <div class="grid" id="game-grid">
+
+    <!-- Empty top-left corner -->
+    <div class="header"></div>
+
+    <!-- Column headers -->
+    <div class="header col"></div>
+    <div class="header col"></div>
+    <div class="header col"></div>
+
+    <!-- Row 1 -->
+    <div class="header row"></div>
+<div class="cell"><input name="cell-0" id="cell-0" autocomplete="off"></div>
+<div class="cell"><input name="cell-1" id="cell-1" autocomplete="off"></div>
+<div class="cell"><input name="cell-2" id="cell-2" autocomplete="off"></div>
+
+    <!-- Row 2 -->
+    <div class="header row"></div>
+<div class="cell"><input name="cell-3" id="cell-3" autocomplete="off"></div>
+<div class="cell"><input name="cell-4" id="cell-4" autocomplete="off"></div>
+<div class="cell"><input name="cell-5" id="cell-5" autocomplete="off"></div>
+
+
+    <!-- Row 3 -->
+    <div class="header row"></div>
+<div class="cell"><input name="cell-6" id="cell-6" autocomplete="off"></div>
+<div class="cell"><input name="cell-7" id="cell-7" autocomplete="off"></div>
+<div class="cell"><input name="cell-8" id="cell-8" autocomplete="off"></div>
+
+    </div>
+
+    <div id="custom-play-container">
+      <button id="custom-play-btn" type="button" disabled>Play Grid</button>
+    </div>
+
+  <!-- Share View (appears after puzzle completion) -->
+    <div id="share-view">
+      <div id="share-copy-feedback" role="status" aria-live="polite"></div>
+      <div id="share-score"></div>
+      <!-- Share Buttons -->
+      <div id="share-buttons">
+        <button id="give-up-btn" type="button">Give Up</button>
+        <button id="share-copy">Copy Result for Sharing</button>
+      </div>
+    </div>
+
+    <div id="support-actions-container">
+      <div id="tip-button-container">
+      <a
+        href="https://buymeacoffee.com/CastawayCross"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="tip-link-fallback"
+        aria-label="Leave a tip for Castaway Cross"
+      >
+        <img
+          id="tip-logo"
+          src="assets/images/bmc-logo.svg"
+          data-logo-light="assets/images/bmc-logo.svg"
+          data-logo-dark="assets/images/bmc-logo-darkmode.svg?v=20260302"
+          alt=""
+          aria-hidden="true"
+          onerror="this.style.display='none'; this.parentElement.classList.add('use-emoji-icon');"
+        >
+        <span class="tip-link-emoji" aria-hidden="true">☕</span>
+        <span>Leave a Tip!</span>
+      </a>
+      </div>
+
+      <div id="follow-button-container">
+        <button id="follow-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="follow-menu">Follow for Updates</button>
+        <div id="follow-menu" role="menu" aria-label="Follow Castaway Cross">
+          <a href="https://www.instagram.com/castawaycross" target="_blank" rel="noopener noreferrer" class="follow-icon-link" aria-label="Follow Castaway Cross on Instagram" role="menuitem">
+            <img class="follow-icon-logo" src="images/ig_logo.svg" alt="" aria-hidden="true">
+          </a>
+          <a href="https://x.com/CastawayCross" target="_blank" rel="noopener noreferrer" class="follow-icon-link" aria-label="Follow Castaway Cross on X" role="menuitem">
+            <img class="follow-icon-logo" src="images/X_logo_2023.svg" alt="" aria-hidden="true">
+          </a>
+          <a href="https://bsky.app/profile/castawaycross.bsky.social" target="_blank" rel="noopener noreferrer" class="follow-icon-link" aria-label="Follow Castaway Cross on Bluesky" role="menuitem">
+            <img class="follow-icon-logo" src="images/Bluesky_Logo.svg" alt="" aria-hidden="true">
+          </a>
+          <a href="feed.xml" class="follow-icon-link" aria-label="Subscribe to Castaway Cross updates by RSS" role="menuitem">
+            <img class="follow-icon-logo" src="images/rss_logo.svg" alt="" aria-hidden="true">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <section id="how-to-play" aria-labelledby="how-to-play-heading">
+      <details id="how-to-play-details" open>
+        <summary id="how-to-play-heading">How to Play</summary>
+        <div class="how-to-play-content">
+          <p>Fill each square with a Survivor castaway who matches both the row and column clues.</p>
+          <ul>
+            <li>Each answer can only be used once in the grid.</li>
+            <li>You have 9 total guesses, so make each pick count.</li>
+            <li>When the puzzle ends, use the copy button to share your result anywhere you like.</li>
+            <li>Each correct answer shows a rarity score based on the percentage of players who chose that castaway for that cell. A higher number means a more popular answer.</li>
+            <li>The daily puzzle resets at 6:00 AM Eastern Time (ET), regardless of your local time zone.</li>
+            <li>Daily puzzle difficulty varies by day of the week: Wednesday is generally the easiest, then it scales up through the week to the hardest puzzle on Tuesday.</li>
+            <li>Data for seasons that are currently airing is not updated until those seasons are over, to help avoid spoilers.</li>
+          </ul>
+
+          <h4>Attributes</h4>
+          <ul>
+            <li><em>Season</em>: players who appeared in a specific season, era, location, or season-themed clue.</li>
+            <li><em>Placement</em>: players who finished in a specific placement (for example, Sole Survivor, Runner-Up, or Third Place).</li>
+            <li><em>Milestones</em>: players who reached (or did not reach) major game stages like Merge, Jury, or Final Tribal Council.</li>
+            <li><em>Returning Player</em>: players who competed on more than one season.</li>
+            <li><em>Advantages</em>: players who received, held, used, or successfully/unsuccessfully played an advantage.</li>
+            <li><em>Immunity Wins</em>: players with at least the listed number of individual or career immunity wins.</li>
+            <li><em>Confessionals</em>: players with at least the listed number of career confessionals.</li>
+            <li><em>Votes Against</em>: players who received at least the listed number of votes against them across their career.</li>
+            <li><em>Sit-Outs</em>: players with at least the listed number of times they sat out of challenges across their career.</li>
+            <li><em>Tribe Color</em>: players who were on a tribe with the listed buff color (grouped by color family).</li>
+            <li><em>Firemaking</em>: players who won or lost a firemaking tiebreaker challenge.</li>
+          </ul>
+        </div>
+      </details>
+    </section>
+
+    <section id="updates" aria-labelledby="updates-heading">
+      <div class="updates-heading-row">
+        <h3 id="updates-heading">Latest Updates</h3>
+        <a class="updates-rss-link" href="feed.xml">RSS</a>
+      </div>
+      <p id="updates-empty" hidden>No updates posted yet. Check back soon.</p>
+      <ul id="updates-list"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Disclaimer -->
+    <div id="disclaimer">
+      Castaway Cross is a fan‑made project and is not affiliated with, endorsed by, or connected to CBS, Paramount, or Immaculate Grid. All Survivor references are for descriptive and educational purposes only. Data is sourced from the <a href="https://github.com/doehm/survivoR">survivoR</a> project.
+      <br>
+      <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms &amp; Disclaimer</a>
+    </div>
+  </footer>
+
+  <!-- Theme Persistence Script -->
+  <script>
+    const root = document.documentElement;
+    const toggle = document.getElementById("theme-toggle");
+    const tipLogo = document.getElementById("tip-logo");
+
+    const syncTipLogoWithTheme = () => {
+      if (!tipLogo) return;
+      const lightLogo = tipLogo.dataset.logoLight;
+      const darkLogo = tipLogo.dataset.logoDark;
+      tipLogo.src = root.classList.contains("dark") ? darkLogo : lightLogo;
+    };
+
+    // Load saved theme
+    const saved = localStorage.getItem("theme");
+    if (saved === "dark") {
+      root.classList.add("dark");
+      toggle.textContent = "🌙";
+    } else {
+      toggle.textContent = "☀️";
+    }
+    syncTipLogoWithTheme();
+
+    const HOW_TO_PLAY_STORAGE_KEY = "castawayCross.howToPlayOpen";
+    const howToPlayDetails = document.getElementById("how-to-play-details");
+
+    if (howToPlayDetails) {
+      const savedHowToPlayState = localStorage.getItem(HOW_TO_PLAY_STORAGE_KEY);
+
+      if (savedHowToPlayState === "false") {
+        howToPlayDetails.removeAttribute("open");
+      } else {
+        howToPlayDetails.setAttribute("open", "");
+      }
+
+      howToPlayDetails.addEventListener("toggle", () => {
+        localStorage.setItem(HOW_TO_PLAY_STORAGE_KEY, String(howToPlayDetails.open));
+      });
+    }
+
+    // Toggle theme
+    toggle.onclick = () => {
+      const isDark = root.classList.toggle("dark");
+      toggle.textContent = isDark ? "🌙" : "☀️";
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+      syncTipLogoWithTheme();
+    };
+  </script>
+
+  <!-- Main Game Logic -->
+  <script type="module" src="js/grid.js?v=1bcf2a6" defer></script>
+  <script type="module" src="js/updates.js?v=1bcf2a6" defer></script>
+
+</body>
+</html>
