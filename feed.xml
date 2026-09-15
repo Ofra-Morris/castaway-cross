@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>Castaway Cross Updates</title>
+  <link>https://castawaycross.com/</link>
+  <description>Release notes and updates for Castaway Cross.</description>
+  <language>en-us</language>
+  <lastBuildDate>Sun, 31 May 2026 00:00:00 GMT</lastBuildDate>
+  <ttl>60</ttl>
+  <item>
+    <title>Survivor 50 and AU Survivor: Redemption data added</title>
+    <link>https://castawaycross.com/#updates</link>
+    <guid isPermaLink="false">2026-05-31-s50-au-redemption</guid>
+    <pubDate>Sun, 31 May 2026 00:00:00 GMT</pubDate>
+    <author>Castaway Cross</author>
+    <description>Full gameplay data for Survivor 50: In the Hands of the Fans and Australian Survivor: Redemption is now live! Tribal councils, challenges, placements, and advantages will all be reflected in grid eligibility. New categories also include Found and Received categories for the Billie Eilish Boomerang Idol, plus updated tribe colors for both seasons.</description>
+  </item>
+  <item>
+    <title>Full rarity percentages on the results screen</title>
+    <link>https://castawaycross.com/#updates</link>
+    <guid isPermaLink="false">2026-05-28-results-rarity-percentages</guid>
+    <pubDate>Thu, 28 May 2026 00:00:00 GMT</pubDate>
+    <author>Castaway Cross</author>
+    <description>The results screen now gives you the option to view eligible players alphabetically or by percentage of players who picked each castaway for each cell, so you can see exactly how common or rare each of your answers was relative to the field.</description>
+  </item>
+  <item>
+    <title>Castaway headshots added</title>
+    <link>https://castawaycross.com/#updates</link>
+    <guid isPermaLink="false">2026-05-20-headshots</guid>
+    <pubDate>Wed, 20 May 2026 00:00:00 GMT</pubDate>
+    <author>Castaway Cross</author>
+    <description>Castaway headshots are now displayed on completed result cells, so you can put a face to the name after each guess.</description>
+  </item>
+  <item>
+    <title>Rarity scores added</title>
+    <link>https://castawaycross.com/#updates</link>
+    <guid isPermaLink="false">2026-05-08-rarity-scores</guid>
+    <pubDate>Fri, 08 May 2026 00:00:00 GMT</pubDate>
+    <author>Castaway Cross</author>
+    <description>Each correct answer shows a rarity score based on the percentage of players who chose that castaway for that cell. Chase the crowd for a high score, or go low with deep cuts from Survivor history!</description>
+  </item>
+  <item>
+    <title>Updates section + RSS feed launched</title>
+    <link>https://castawaycross.com/#updates</link>
+    <guid isPermaLink="false">2026-04-26-rss-launch</guid>
+    <pubDate>Sun, 26 Apr 2026 00:00:00 GMT</pubDate>
+    <author>Castaway Cross</author>
+    <description>Added a new updates section and a public RSS feed so players can follow changes to the site.</description>
+  </item>
+  <item>
+    <title>Results screen updates</title>
+    <link>https://castawaycross.com/#updates</link>
+    <guid isPermaLink="false">2026-04-14-results-screen-updates</guid>
+    <pubDate>Tue, 14 Apr 2026 00:00:00 GMT</pubDate>
+    <author>Castaway Cross</author>
+    <description>Improved the results screen by adding country flags next to each castaway&apos;s name and linking US contestants to their respective pages on Survivor-Reference.</description>
+  </item>
+  <item>
+    <title>New categories added</title>
+    <link>https://castawaycross.com/#updates</link>
+    <guid isPermaLink="false">2026-04-04-new-categories</guid>
+    <pubDate>Sat, 04 Apr 2026 00:00:00 GMT</pubDate>
+    <author>Castaway Cross</author>
+    <description>Added the following new categories for daily, random, and custom puzzles:
+- One-Time Player
+- No Tribals Before Merge
+- Played as a Teen
+- Played in Their 20s/30s/40s/50s/60s</description>
+  </item>
+  <item>
+    <title>Castaway Cross Site Launch</title>
+    <link>https://castawaycross.com/#updates</link>
+    <guid isPermaLink="false">2026-02-19-site-launch</guid>
+    <pubDate>Thu, 19 Feb 2026 00:00:00 GMT</pubDate>
+    <author>Castaway Cross</author>
+    <description>Launched site for public release.</description>
+  </item>
+</channel>
+</rss>
