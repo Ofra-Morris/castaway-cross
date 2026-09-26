@@ -1,0 +1,236 @@
+{
+  "schemaVersion": "1",
+  "puzzles": [
+    {
+      "dateKey": "2026-09-26",
+      "rows": [
+        "placement_jury",
+        "votes_against_season_6plus",
+        "age_played_in_20s"
+      ],
+      "cols": [
+        "season_US34",
+        "season_US43",
+        "challenge_won_last_gasp"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 1149327809,
+        "difficultyPoints": 10,
+        "difficultyTarget": "7-10",
+        "status": "live",
+        "updatedAt": "2026-09-26T15:05:37.346Z"
+      }
+    },
+    {
+      "dateKey": "2026-09-27",
+      "rows": [
+        "immunity_career_2plus",
+        "held_shot_in_the_dark",
+        "juror_voted_winner"
+      ],
+      "cols": [
+        "placement_third",
+        "used_extra_vote",
+        "confessionals_career_60plus"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 3621847392,
+        "difficultyPoints": 9,
+        "difficultyTarget": "7-10",
+        "status": "scheduled",
+        "updatedAt": "2026-09-26T15:05:37.346Z"
+      }
+    },
+    {
+      "dateKey": "2026-09-28",
+      "rows": [
+        "placement_ftc",
+        "placement_premerge",
+        "status_one_time_player"
+      ],
+      "cols": [
+        "season_US13",
+        "season_US35",
+        "votes_against_career_10plus"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 2028921287,
+        "difficultyPoints": 7,
+        "difficultyTarget": "7-11",
+        "status": "scheduled",
+        "updatedAt": "2026-09-26T15:05:37.346Z"
+      }
+    },
+    {
+      "dateKey": "2026-09-29",
+      "rows": [
+        "played_in_australia",
+        "challenge_won_simmotion",
+        "votes_against_season_10plus"
+      ],
+      "cols": [
+        "challenge_participated_gross_food_challenge",
+        "tribe_color_green",
+        "tribe_color_purple"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 3696294702,
+        "difficultyPoints": 13,
+        "difficultyTarget": "12+",
+        "status": "scheduled",
+        "updatedAt": "2026-09-26T15:05:37.346Z"
+      }
+    },
+    {
+      "dateKey": "2026-09-30",
+      "rows": [
+        "placement_nevermerge",
+        "placement_preftc",
+        "used_hidden_immunity_idol"
+      ],
+      "cols": [
+        "season_US24",
+        "season_US49",
+        "format_re_entry"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 857770443,
+        "difficultyPoints": 6,
+        "difficultyTarget": "6",
+        "status": "scheduled",
+        "updatedAt": "2026-09-26T15:05:37.346Z"
+      }
+    },
+    {
+      "dateKey": "2026-10-01",
+      "rows": [
+        "format_all_new_players",
+        "played_in_nicaragua",
+        "votes_against_career_3plus"
+      ],
+      "cols": [
+        "placement_neverjury",
+        "placement_runner_up",
+        "fail_hidden_immunity_idol"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 1268226678,
+        "difficultyPoints": 7,
+        "difficultyTarget": "6-8",
+        "status": "scheduled",
+        "updatedAt": "2026-09-26T15:05:37.346Z"
+      }
+    },
+    {
+      "dateKey": "2026-10-02",
+      "rows": [
+        "immunity_1plus",
+        "votes_against_season_5plus",
+        "confessionals_season_40plus"
+      ],
+      "cols": [
+        "placement_winner",
+        "season_US14",
+        "season_US26"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 3624788829,
+        "difficultyPoints": 9,
+        "difficultyTarget": "6-9",
+        "status": "scheduled",
+        "updatedAt": "2026-09-26T15:05:37.346Z"
+      }
+    },
+    {
+      "dateKey": "2026-10-03",
+      "rows": [
+        "played_in_samoa",
+        "challenge_won_gross_food_challenge",
+        "votes_against_career_5plus"
+      ],
+      "cols": [
+        "immunity_season_0",
+        "played_inland",
+        "age_youngest_player"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 1420953980,
+        "difficultyPoints": 10,
+        "difficultyTarget": "7-10",
+        "status": "scheduled",
+        "updatedAt": "2026-09-26T15:05:37.346Z"
+      }
+    },
+    {
+      "dateKey": "2026-10-04",
+      "rows": [
+        "played_in_fiji",
+        "played_in_mainland_asia",
+        "age_played_in_30s"
+      ],
+      "cols": [
+        "immunity_season_2plus",
+        "played_in_central_america",
+        "tribe_color_red"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 3056694707,
+        "difficultyPoints": 10,
+        "difficultyTarget": "7-10",
+        "status": "scheduled",
+        "updatedAt": "2026-09-26T15:05:37.346Z"
+      }
+    },
+    {
+      "dateKey": "2026-10-05",
+      "rows": [
+        "exit_medevac",
+        "season_US19",
+        "season_US32"
+      ],
+      "cols": [
+        "votes_against_season_4plus",
+        "tribe_color_blue",
+        "tribe_color_yellow"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 129578938,
+        "difficultyPoints": 11,
+        "difficultyTarget": "7-11",
+        "status": "scheduled",
+        "updatedAt": "2026-09-26T15:05:37.346Z"
+      }
+    },
+    {
+      "dateKey": "2026-10-06",
+      "rows": [
+        "format_fans_vs_favorites",
+        "played_in_brazil",
+        "juror_not_voted_winner"
+      ],
+      "cols": [
+        "juror_voted_winner",
+        "auction_item_won",
+        "age_played_in_40s"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 3201972097,
+        "difficultyPoints": 12,
+        "difficultyTarget": "12+",
+        "status": "scheduled",
+        "updatedAt": "2026-09-26T15:05:37.346Z"
+      }
+    }
+  ]
+}
