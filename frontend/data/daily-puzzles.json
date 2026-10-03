@@ -1,0 +1,236 @@
+{
+  "schemaVersion": "1",
+  "puzzles": [
+    {
+      "dateKey": "2026-10-03",
+      "rows": [
+        "played_in_samoa",
+        "challenge_won_gross_food_challenge",
+        "votes_against_career_5plus"
+      ],
+      "cols": [
+        "immunity_season_0",
+        "played_inland",
+        "age_youngest_player"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 1420953980,
+        "difficultyPoints": 10,
+        "difficultyTarget": "7-10",
+        "status": "live",
+        "updatedAt": "2026-10-03T15:12:50.586Z"
+      }
+    },
+    {
+      "dateKey": "2026-10-04",
+      "rows": [
+        "played_in_fiji",
+        "played_in_mainland_asia",
+        "age_played_in_30s"
+      ],
+      "cols": [
+        "immunity_season_2plus",
+        "played_in_central_america",
+        "tribe_color_red"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 3056694707,
+        "difficultyPoints": 10,
+        "difficultyTarget": "7-10",
+        "status": "scheduled",
+        "updatedAt": "2026-10-03T15:12:50.586Z"
+      }
+    },
+    {
+      "dateKey": "2026-10-05",
+      "rows": [
+        "exit_medevac",
+        "season_US19",
+        "season_US32"
+      ],
+      "cols": [
+        "votes_against_season_4plus",
+        "tribe_color_blue",
+        "tribe_color_yellow"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 129578938,
+        "difficultyPoints": 11,
+        "difficultyTarget": "7-11",
+        "status": "scheduled",
+        "updatedAt": "2026-10-03T15:12:50.586Z"
+      }
+    },
+    {
+      "dateKey": "2026-10-06",
+      "rows": [
+        "format_fans_vs_favorites",
+        "played_in_brazil",
+        "juror_not_voted_winner"
+      ],
+      "cols": [
+        "juror_voted_winner",
+        "auction_item_won",
+        "age_played_in_40s"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 3201972097,
+        "difficultyPoints": 12,
+        "difficultyTarget": "12+",
+        "status": "scheduled",
+        "updatedAt": "2026-10-03T15:12:50.586Z"
+      }
+    },
+    {
+      "dateKey": "2026-10-07",
+      "rows": [
+        "placement_prejury",
+        "season_US06",
+        "played_in_malaysia"
+      ],
+      "cols": [
+        "placement_ftc",
+        "placement_premerge",
+        "immunity_season_3plus"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 2913028640,
+        "difficultyPoints": 6,
+        "difficultyTarget": "6",
+        "status": "scheduled",
+        "updatedAt": "2026-10-03T15:12:50.586Z"
+      }
+    },
+    {
+      "dateKey": "2026-10-08",
+      "rows": [
+        "status_returning",
+        "used_hidden_immunity_idol",
+        "confessionals_career_40plus"
+      ],
+      "cols": [
+        "firemaking_loss",
+        "format_re_entry",
+        "fail_shot_in_the_dark"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 854842503,
+        "difficultyPoints": 8,
+        "difficultyTarget": "6-8",
+        "status": "scheduled",
+        "updatedAt": "2026-10-03T15:12:50.586Z"
+      }
+    },
+    {
+      "dateKey": "2026-10-09",
+      "rows": [
+        "season_US17",
+        "journey_went",
+        "status_one_time_player"
+      ],
+      "cols": [
+        "placement_merge",
+        "placement_nevermerge",
+        "confessionals_season_20plus"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 1768447470,
+        "difficultyPoints": 9,
+        "difficultyTarget": "6-9",
+        "status": "scheduled",
+        "updatedAt": "2026-10-03T15:12:50.586Z"
+      }
+    },
+    {
+      "dateKey": "2026-10-10",
+      "rows": [
+        "held_extra_vote",
+        "challenge_participated_last_gasp",
+        "confessionals_career_100plus"
+      ],
+      "cols": [
+        "placement_jury",
+        "fail_hidden_immunity_idol",
+        "votes_against_season_0"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 2938672120,
+        "difficultyPoints": 10,
+        "difficultyTarget": "7-10",
+        "status": "scheduled",
+        "updatedAt": "2026-10-03T15:12:50.586Z"
+      }
+    },
+    {
+      "dateKey": "2026-10-11",
+      "rows": [
+        "votes_against_season_3plus",
+        "votes_against_season_5plus",
+        "confessionals_career_30plus"
+      ],
+      "cols": [
+        "season_US05",
+        "season_US42",
+        "played_in_africa"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 3604732569,
+        "difficultyPoints": 10,
+        "difficultyTarget": "7-10",
+        "status": "scheduled",
+        "updatedAt": "2026-10-03T15:12:50.586Z"
+      }
+    },
+    {
+      "dateKey": "2026-10-12",
+      "rows": [
+        "season_US37",
+        "season_US46",
+        "confessional_lowest_season"
+      ],
+      "cols": [
+        "format_all_returning_players",
+        "votes_against_career_12plus",
+        "votes_against_career_8plus"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 3400412786,
+        "difficultyPoints": 10,
+        "difficultyTarget": "7-11",
+        "status": "scheduled",
+        "updatedAt": "2026-10-03T15:12:50.586Z"
+      }
+    },
+    {
+      "dateKey": "2026-10-13",
+      "rows": [
+        "voting_no_tribals_before_merge_career",
+        "tribe_color_yellow",
+        "age_played_in_30s"
+      ],
+      "cols": [
+        "season_US38",
+        "votes_against_career_3plus",
+        "votes_against_career_0"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 2550003115,
+        "difficultyPoints": 13,
+        "difficultyTarget": "12+",
+        "status": "scheduled",
+        "updatedAt": "2026-10-03T15:12:50.586Z"
+      }
+    }
+  ]
+}
