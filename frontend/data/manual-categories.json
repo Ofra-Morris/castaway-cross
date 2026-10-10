@@ -1,0 +1,318 @@
+[
+  {
+    "id": "status_returning",
+    "group": "status",
+    "type": "boolean_flag",
+    "params": {
+      "field": "returning"
+    },
+    "label": "Returning Player"
+  },
+  {
+    "id": "status_one_time_player",
+    "group": "status",
+    "type": "boolean_flag_equals",
+    "params": {
+      "field": "returning",
+      "value": false
+    },
+    "label": "One-Time Player"
+  },
+  {
+    "id": "status_played_three_plus_seasons",
+    "group": "status",
+    "type": "boolean_flag",
+    "params": {
+      "field": "played_three_plus_seasons"
+    },
+    "label": "Played 3+ Seasons"
+  },
+  {
+    "id": "gender_male",
+    "group": "status",
+    "type": "gender_equals",
+    "params": {
+      "gender": "male"
+    },
+    "label": "Man"
+  },
+  {
+    "id": "gender_female",
+    "group": "status",
+    "type": "gender_equals",
+    "params": {
+      "gender": "female"
+    },
+    "label": "Woman"
+  },
+  {
+    "id": "placement_winner",
+    "group": "placement",
+    "type": "placement_equals",
+    "params": {
+      "place": 1
+    },
+    "label": "Sole Survivor"
+  },
+  {
+    "id": "placement_runner_up",
+    "group": "placement",
+    "type": "placement_equals",
+    "params": {
+      "place": 2
+    },
+    "label": "Runner-Up"
+  },
+  {
+    "id": "placement_third",
+    "group": "placement",
+    "type": "placement_equals",
+    "params": {
+      "place": 3
+    },
+    "label": "Third Place"
+  },
+  {
+    "id": "placement_merge",
+    "group": "placement",
+    "type": "season_list_nonempty",
+    "params": {
+      "field": "made_merge"
+    },
+    "label": "Made the Merge",
+    "tooltip": "Reached the merge. The modern 'Mergatory' merge episode counts as making the merge."
+  },
+  {
+    "id": "placement_jury",
+    "group": "placement",
+    "type": "season_list_nonempty",
+    "params": {
+      "field": "made_jury"
+    },
+    "label": "On the Jury"
+  },
+  {
+    "id": "placement_ftc",
+    "group": "placement",
+    "type": "season_list_nonempty",
+    "params": {
+      "field": "made_ftc"
+    },
+    "label": "Made Final Tribal Council"
+  },
+  {
+    "id": "exit_quit",
+    "group": "exit",
+    "type": "season_list_nonempty",
+    "params": {
+      "field": "quit"
+    },
+    "label": "Quit"
+  },
+  {
+    "id": "exit_medevac",
+    "group": "exit",
+    "type": "season_list_nonempty",
+    "params": {
+      "field": "medevac"
+    },
+    "label": "Medevaced"
+  },
+  {
+    "id": "immunity_1plus",
+    "group": "challenges",
+    "type": "immunity_wins_count",
+    "params": {
+      "min": 1
+    },
+    "label": "1+ Individual Immunity Wins"
+  },
+  {
+    "id": "firemaking_win",
+    "group": "firemaking",
+    "type": "firemaking_result",
+    "params": {
+      "result": "win"
+    },
+    "label": "Won Firemaking"
+  },
+  {
+    "id": "firemaking_loss",
+    "group": "firemaking",
+    "type": "firemaking_result",
+    "params": {
+      "result": "loss"
+    },
+    "label": "Lost Firemaking"
+  },
+  {
+    "id": "juror_voted_winner",
+    "group": "voting",
+    "type": "season_list_nonempty",
+    "params": {
+      "field": "jury_voted_winner"
+    },
+    "label": "As a Juror, Voted for the Winner"
+  },
+  {
+    "id": "juror_not_voted_winner",
+    "group": "voting",
+    "type": "season_list_nonempty",
+    "params": {
+      "field": "jury_voted_not_winner"
+    },
+    "label": "As a Juror, Did Not Vote for the Winner"
+  },
+  {
+    "id": "age_oldest_player",
+    "group": "age",
+    "type": "season_list_nonempty",
+    "params": {
+      "field": "oldest_player"
+    },
+    "label": "Oldest Player on Their Season"
+  },
+  {
+    "id": "age_youngest_player",
+    "group": "age",
+    "type": "season_list_nonempty",
+    "params": {
+      "field": "youngest_player"
+    },
+    "label": "Youngest Player on Their Season"
+  },
+  {
+    "id": "age_played_as_teen",
+    "group": "age",
+    "type": "age_bracket",
+    "params": {
+      "min": 0,
+      "max": 19
+    },
+    "label": "Played as a Teen"
+  },
+  {
+    "id": "age_played_in_20s",
+    "group": "age",
+    "type": "age_bracket",
+    "params": {
+      "min": 20,
+      "max": 29
+    },
+    "label": "Played in Their 20s"
+  },
+  {
+    "id": "age_played_in_30s",
+    "group": "age",
+    "type": "age_bracket",
+    "params": {
+      "min": 30,
+      "max": 39
+    },
+    "label": "Played in Their 30s"
+  },
+  {
+    "id": "age_played_in_40s",
+    "group": "age",
+    "type": "age_bracket",
+    "params": {
+      "min": 40,
+      "max": 49
+    },
+    "label": "Played in Their 40s"
+  },
+  {
+    "id": "age_played_in_50s",
+    "group": "age",
+    "type": "age_bracket",
+    "params": {
+      "min": 50,
+      "max": 59
+    },
+    "label": "Played in Their 50s"
+  },
+  {
+    "id": "age_played_in_60s",
+    "group": "age",
+    "type": "age_bracket",
+    "params": {
+      "min": 60,
+      "max": 69
+    },
+    "label": "Played in Their 60s"
+  },
+  {
+    "id": "voting_no_tribals_before_merge",
+    "group": "voting",
+    "type": "season_list_nonempty",
+    "params": {
+      "field": "no_tribals_before_merge"
+    },
+    "label": "No Tribals Before Merge (Single Season)",
+    "tooltip": "Made the merge in a season without attending any pre-merge tribal council. The modern 'Mergatory' tribal counts as the merge, not a pre-merge one."
+  },
+  {
+    "id": "voting_no_tribals_before_merge_career",
+    "group": "voting",
+    "type": "season_list_covering_all_seasons",
+    "params": {
+      "field": "no_tribals_before_merge"
+    },
+    "label": "No Tribals Before Merge (Career)",
+    "tooltip": "Never attended a pre-merge tribal council in any season played. The modern 'Mergatory' tribal counts as the merge, not a pre-merge one."
+  },
+  {
+    "id": "confessional_highest_season",
+    "group": "confessionals",
+    "type": "season_list_nonempty",
+    "params": {
+      "field": "highest_confessional_count"
+    },
+    "label": "Highest Confessional Count in Their Season"
+  },
+  {
+    "id": "confessional_lowest_season",
+    "group": "confessionals",
+    "type": "season_list_nonempty",
+    "params": {
+      "field": "lowest_confessional_count"
+    },
+    "label": "Lowest Confessional Count in Their Season"
+  },
+  {
+    "id": "auction_item_won",
+    "group": "events",
+    "type": "season_list_nonempty",
+    "params": {
+      "field": "auction_item_won"
+    },
+    "label": "Won an Auction Item"
+  },
+  {
+    "id": "journey_went",
+    "group": "events",
+    "type": "season_list_nonempty",
+    "params": {
+      "field": "journeys"
+    },
+    "label": "Went on a Journey"
+  },
+  {
+    "id": "journey_lost_vote",
+    "group": "events",
+    "type": "season_list_nonempty",
+    "params": {
+      "field": "journey_lost_vote"
+    },
+    "label": "Lost Their Vote on a Journey"
+  },
+  {
+    "id": "journey_gained_advantage",
+    "group": "events",
+    "type": "season_list_nonempty",
+    "params": {
+      "field": "journey_gained_advantage"
+    },
+    "label": "Gained an Advantage on a Journey"
+  }
+]
