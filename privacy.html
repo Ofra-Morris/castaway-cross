@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Castaway Cross Privacy</title>
+  <meta name="robots" content="index,follow">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f9fafb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #4b5563;
+      --border: #d1d5db;
+      --link: #1d4ed8;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111827;
+        --card: #1f2937;
+        --text: #f9fafb;
+        --muted: #d1d5db;
+        --border: #374151;
+        --link: #93c5fd;
+      }
+    }
+    body {
+      margin: 0;
+      font-family: Inter, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    main {
+      max-width: 760px;
+      margin: 32px auto;
+      padding: 0 16px 32px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    }
+    h1, h2 { line-height: 1.3; }
+    h2 { margin-top: 24px; }
+    p, li { color: var(--muted); }
+    a { color: var(--link); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="card">
+      <h1>Privacy Notice</h1>
+      <p>Last updated: February 2026</p>
+
+      <h2>Data We Collect</h2>
+      <ul>
+        <li><strong>Gameplay and preference data in localStorage:</strong> Castaway Cross stores game state and preferences in your browser, such as theme selection (light/dark), puzzle progress, and related local settings needed to restore your experience.</li>
+        <li><strong>Basic analytics data:</strong> We may collect aggregate, non-sensitive usage information (for example page visits, device/browser type, and feature interactions) to understand site performance and improve gameplay.</li>
+      </ul>
+      <p>We do not intentionally collect sensitive personal information through gameplay forms.</p>
+
+      <h2>Third-Party Services</h2>
+      <ul>
+        <li><strong>Google Fonts:</strong> Fonts are loaded from Google Fonts for site styling.</li>
+        <li><strong>Social share destinations:</strong> If you choose to share results, you may be redirected to third-party platforms such as X, Facebook, or Reddit, each governed by its own privacy policy.</li>
+        <li><strong>Buy Me a Coffee:</strong> Tipping links route to Buy Me a Coffee, which manages its own data handling for payments/interactions.</li>
+      </ul>
+
+      <h2>Data Removal or Contact Requests</h2>
+      <p>If you would like to request removal of content, report a privacy concern, or ask a question about data handling, contact the project maintainers by opening an issue in the Castaway Cross repository with the subject "Privacy Request." Include enough detail for us to identify and address your request.</p>
+
+      <h2>Retention and Control</h2>
+      <p>Most game-related data is stored locally in your browser and can be removed by clearing localStorage or site data for this domain.</p>
+      <p>For daily activity analytics, we store two non-PII local keys in your browser: an anonymous client ID and the last UTC date a daily activity event was sent. This allows at most one <code>daily_active_user</code> event per user per UTC day.</p>
+      <p>Daily activity payloads contain only event name, UTC date, and anonymous client ID (no name, email, or other direct personal identifiers). Server-side analytics logs are retained for up to 13 months, then deleted or aggregated.</p>
+
+      <p><a href="/">Return to Castaway Cross</a></p>
+    </div>
+  </main>
+</body>
+</html>
