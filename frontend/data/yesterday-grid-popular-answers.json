@@ -1,0 +1,716 @@
+{
+  "schemaVersion": "2",
+  "generatedAt": "2026-10-24T14:55:54.263Z",
+  "puzzleDate": "2026-10-23",
+  "rows": [
+    "placement_runner_up",
+    "season_US30",
+    "fail_extra_vote"
+  ],
+  "cols": [
+    "immunity_1plus",
+    "immunity_career_2plus",
+    "tribe_color_red"
+  ],
+  "cells": {
+    "0,0": {
+      "topAnswers": [
+        {
+          "name": "Kelly Wiglesworth",
+          "castawayId": "US0015",
+          "count": 10,
+          "correctCount": 10
+        },
+        {
+          "name": "Sophi",
+          "castawayId": "US0749",
+          "count": 9,
+          "correctCount": 9
+        },
+        {
+          "name": "Amanda Kimmel",
+          "castawayId": "US0235",
+          "count": 3,
+          "correctCount": 3
+        },
+        {
+          "name": "Boston Rob",
+          "castawayId": "US0055",
+          "count": 3,
+          "correctCount": 3
+        },
+        {
+          "name": "Matthew von Ertfelda",
+          "castawayId": "US0095",
+          "count": 3,
+          "correctCount": 3
+        },
+        {
+          "name": "Baden Gilbert",
+          "castawayId": "AU0093",
+          "count": 2,
+          "correctCount": 2
+        },
+        {
+          "name": "Eva",
+          "castawayId": "US0721",
+          "count": 2,
+          "correctCount": 2
+        },
+        {
+          "name": "Jonathan Young",
+          "castawayId": "US0615",
+          "count": 2,
+          "correctCount": 2
+        },
+        {
+          "name": "Kaelan",
+          "castawayId": "AU0183",
+          "count": 2,
+          "correctCount": 2
+        },
+        {
+          "name": "Parvati",
+          "castawayId": "US0197",
+          "count": 2,
+          "correctCount": 2
+        },
+        {
+          "name": "Aubry",
+          "castawayId": "US0477",
+          "count": 1,
+          "correctCount": 1
+        },
+        {
+          "name": "Austin Li Coon",
+          "castawayId": "US0663",
+          "count": 1,
+          "correctCount": 1
+        },
+        {
+          "name": "Charlie Davis",
+          "castawayId": "US0682",
+          "count": 1,
+          "correctCount": 1
+        },
+        {
+          "name": "Colby",
+          "castawayId": "US0031",
+          "count": 1,
+          "correctCount": 1
+        },
+        {
+          "name": "Jackson Goonrey",
+          "castawayId": "AU0211",
+          "count": 1,
+          "correctCount": 1
+        },
+        {
+          "name": "Lillian",
+          "castawayId": "US0099",
+          "count": 1,
+          "correctCount": 1
+        },
+        {
+          "name": "Sharn",
+          "castawayId": "AU0070",
+          "count": 1,
+          "correctCount": 1
+        }
+      ],
+      "totalGuesses": 45
+    },
+    "0,1": {
+      "topAnswers": [
+        {
+          "name": "Colby",
+          "castawayId": "US0031",
+          "count": 10,
+          "correctCount": 10
+        },
+        {
+          "name": "Kelly Wiglesworth",
+          "castawayId": "US0015",
+          "count": 6,
+          "correctCount": 6
+        },
+        {
+          "name": "Ozzy",
+          "castawayId": "US0201",
+          "count": 5,
+          "correctCount": 5
+        },
+        {
+          "name": "Boston Rob",
+          "castawayId": "US0055",
+          "count": 4,
+          "correctCount": 4
+        },
+        {
+          "name": "Tasha",
+          "castawayId": "US0419",
+          "count": 4,
+          "correctCount": 4
+        },
+        {
+          "name": "Cassidy",
+          "castawayId": "US0627",
+          "count": 3,
+          "correctCount": 3
+        },
+        {
+          "name": "Amanda Kimmel",
+          "castawayId": "US0235",
+          "count": 2,
+          "correctCount": 2
+        },
+        {
+          "name": "Danielle DiLorenzo",
+          "castawayId": "US0181",
+          "count": 2,
+          "correctCount": 2
+        },
+        {
+          "name": "Natalie Anderson",
+          "castawayId": "US0442",
+          "count": 2,
+          "correctCount": 2
+        },
+        {
+          "name": "Spencer Bledsoe",
+          "castawayId": "US0421",
+          "count": 2,
+          "correctCount": 2
+        },
+        {
+          "name": "Ashley Hayden",
+          "castawayId": "SA0047",
+          "count": 1,
+          "correctCount": 1
+        },
+        {
+          "name": "Brad Culpepper",
+          "castawayId": "US0401",
+          "count": 1,
+          "correctCount": 1
+        },
+        {
+          "name": "Carolyn Rivera",
+          "castawayId": "US0459",
+          "count": 1,
+          "correctCount": 1
+        },
+        {
+          "name": "Coach",
+          "castawayId": "US0277",
+          "count": 1,
+          "correctCount": 1
+        },
+        {
+          "name": "Woo",
+          "castawayId": "US0423",
+          "count": 1,
+          "correctCount": 1
+        }
+      ],
+      "totalGuesses": 45
+    },
+    "0,2": {
+      "topAnswers": [
+        {
+          "name": "Danielle DiLorenzo",
+          "castawayId": "US0181",
+          "count": 10,
+          "correctCount": 10
+        },
+        {
+          "name": "Parvati",
+          "castawayId": "US0197",
+          "count": 9,
+          "correctCount": 9
+        },
+        {
+          "name": "Austin Li Coon",
+          "castawayId": "US0663",
+          "count": 7,
+          "correctCount": 7
+        },
+        {
+          "name": "Amanda Kimmel",
+          "castawayId": "US0235",
+          "count": 4,
+          "correctCount": 4
+        },
+        {
+          "name": "Aubry",
+          "castawayId": "US0477",
+          "count": 2,
+          "correctCount": 2
+        },
+        {
+          "name": "Boston Rob",
+          "castawayId": "US0055",
+          "count": 2,
+          "correctCount": 2
+        },
+        {
+          "name": "Russell H.",
+          "castawayId": "US0300",
+          "count": 2,
+          "correctCount": 2
+        },
+        {
+          "name": "Stephen Fishbach",
+          "castawayId": "US0280",
+          "count": 2,
+          "correctCount": 2
+        },
+        {
+          "name": "Will Sims II",
+          "castawayId": "US0458",
+          "count": 2,
+          "correctCount": 2
+        },
+        {
+          "name": "Courtney Yates",
+          "castawayId": "US0236",
+          "count": 1,
+          "correctCount": 1
+        },
+        {
+          "name": "Lee Carseldine",
+          "castawayId": "AU0023",
+          "count": 1,
+          "correctCount": 1
+        },
+        {
+          "name": "Matthew von Ertfelda",
+          "castawayId": "US0095",
+          "count": 1,
+          "correctCount": 1
+        },
+        {
+          "name": "Sharn",
+          "castawayId": "AU0070",
+          "count": 1,
+          "correctCount": 1
+        }
+      ],
+      "totalGuesses": 44
+    },
+    "1,0": {
+      "topAnswers": [
+        {
+          "name": "Carolyn Rivera",
+          "castawayId": "US0459",
+          "count": 14,
+          "correctCount": 14
+        },
+        {
+          "name": "Mike Holloway",
+          "castawayId": "US0460",
+          "count": 11,
+          "correctCount": 11
+        },
+        {
+          "name": "Tyler",
+          "castawayId": "US0454",
+          "count": 11,
+          "correctCount": 11
+        },
+        {
+          "name": "Joe Anglim",
+          "castawayId": "US0451",
+          "count": 5,
+          "correctCount": 5
+        },
+        {
+          "name": "Carolyn Wiger",
+          "castawayId": "US0658",
+          "count": 2,
+          "correctCount": 0
+        },
+        {
+          "name": "Dan Foley",
+          "castawayId": "US0455",
+          "count": 1,
+          "correctCount": 0
+        }
+      ],
+      "totalGuesses": 44
+    },
+    "1,1": {
+      "topAnswers": [
+        {
+          "name": "Mike Holloway",
+          "castawayId": "US0460",
+          "count": 28,
+          "correctCount": 28
+        },
+        {
+          "name": "Carolyn Rivera",
+          "castawayId": "US0459",
+          "count": 12,
+          "correctCount": 12
+        },
+        {
+          "name": "Joe Anglim",
+          "castawayId": "US0451",
+          "count": 5,
+          "correctCount": 5
+        }
+      ],
+      "totalGuesses": 45
+    },
+    "1,2": {
+      "topAnswers": [
+        {
+          "name": "Hali",
+          "castawayId": "US0450",
+          "count": 11,
+          "correctCount": 11
+        },
+        {
+          "name": "Joe Anglim",
+          "castawayId": "US0451",
+          "count": 10,
+          "correctCount": 10
+        },
+        {
+          "name": "Vince Sly",
+          "castawayId": "US0444",
+          "count": 10,
+          "correctCount": 10
+        },
+        {
+          "name": "Will Sims II",
+          "castawayId": "US0458",
+          "count": 6,
+          "correctCount": 6
+        },
+        {
+          "name": "Nina Poersch",
+          "castawayId": "US0445",
+          "count": 2,
+          "correctCount": 2
+        },
+        {
+          "name": "Jenn Brown",
+          "castawayId": "US0452",
+          "count": 1,
+          "correctCount": 1
+        },
+        {
+          "name": "Kelly Remington",
+          "castawayId": "US0449",
+          "count": 1,
+          "correctCount": 1
+        },
+        {
+          "name": "Shirin",
+          "castawayId": "US0453",
+          "count": 1,
+          "correctCount": 1
+        }
+      ],
+      "totalGuesses": 42
+    },
+    "2,0": {
+      "topAnswers": [
+        {
+          "name": "Roark",
+          "castawayId": "US0503",
+          "count": 7,
+          "correctCount": 0
+        },
+        {
+          "name": "Stephenie",
+          "castawayId": "US0144",
+          "count": 7,
+          "correctCount": 0
+        },
+        {
+          "name": "Natalie Anderson",
+          "castawayId": "US0442",
+          "count": 4,
+          "correctCount": 0
+        },
+        {
+          "name": "Kellyn",
+          "castawayId": "US0530",
+          "count": 3,
+          "correctCount": 3
+        },
+        {
+          "name": "Stephen Fishbach",
+          "castawayId": "US0280",
+          "count": 3,
+          "correctCount": 0
+        },
+        {
+          "name": "Debbie Wanner",
+          "castawayId": "US0470",
+          "count": 2,
+          "correctCount": 0
+        },
+        {
+          "name": "Drea",
+          "castawayId": "US0611",
+          "count": 2,
+          "correctCount": 0
+        },
+        {
+          "name": "Gavin Whitson",
+          "castawayId": "US0570",
+          "count": 2,
+          "correctCount": 2
+        },
+        {
+          "name": "Sarah Lacina",
+          "castawayId": "US0414",
+          "count": 2,
+          "correctCount": 0
+        },
+        {
+          "name": "Tai",
+          "castawayId": "US0476",
+          "count": 2,
+          "correctCount": 2
+        },
+        {
+          "name": "Dan Foley",
+          "castawayId": "US0455",
+          "count": 1,
+          "correctCount": 0
+        },
+        {
+          "name": "Davie",
+          "castawayId": "US0551",
+          "count": 1,
+          "correctCount": 0
+        },
+        {
+          "name": "Deshawn",
+          "castawayId": "US0601",
+          "count": 1,
+          "correctCount": 0
+        },
+        {
+          "name": "Hunter McKnight",
+          "castawayId": "US0684",
+          "count": 1,
+          "correctCount": 0
+        },
+        {
+          "name": "Parvati",
+          "castawayId": "US0197",
+          "count": 1,
+          "correctCount": 0
+        },
+        {
+          "name": "Savannah",
+          "castawayId": "US0747",
+          "count": 1,
+          "correctCount": 0
+        },
+        {
+          "name": "Xander",
+          "castawayId": "US0597",
+          "count": 1,
+          "correctCount": 1
+        }
+      ],
+      "totalGuesses": 41
+    },
+    "2,1": {
+      "topAnswers": [
+        {
+          "name": "Stephenie",
+          "castawayId": "US0144",
+          "count": 12,
+          "correctCount": 0
+        },
+        {
+          "name": "Savannah",
+          "castawayId": "US0747",
+          "count": 3,
+          "correctCount": 0
+        },
+        {
+          "name": "Aubry",
+          "castawayId": "US0477",
+          "count": 2,
+          "correctCount": 0
+        },
+        {
+          "name": "Deshawn",
+          "castawayId": "US0601",
+          "count": 2,
+          "correctCount": 0
+        },
+        {
+          "name": "Eva",
+          "castawayId": "US0721",
+          "count": 2,
+          "correctCount": 0
+        },
+        {
+          "name": "Lauren Harpe",
+          "castawayId": "US0648",
+          "count": 2,
+          "correctCount": 0
+        },
+        {
+          "name": "Tai",
+          "castawayId": "US0476",
+          "count": 2,
+          "correctCount": 2
+        },
+        {
+          "name": "Drea",
+          "castawayId": "US0611",
+          "count": 1,
+          "correctCount": 0
+        },
+        {
+          "name": "Jake O'Kane",
+          "castawayId": "US0671",
+          "count": 1,
+          "correctCount": 0
+        },
+        {
+          "name": "Kyle Fraser",
+          "castawayId": "US0726",
+          "count": 1,
+          "correctCount": 1
+        },
+        {
+          "name": "Maria",
+          "castawayId": "US0689",
+          "count": 1,
+          "correctCount": 1
+        },
+        {
+          "name": "Ozzy",
+          "castawayId": "US0201",
+          "count": 1,
+          "correctCount": 0
+        },
+        {
+          "name": "Rick Devens",
+          "castawayId": "US0560",
+          "count": 1,
+          "correctCount": 0
+        },
+        {
+          "name": "Sarah Lacina",
+          "castawayId": "US0414",
+          "count": 1,
+          "correctCount": 0
+        },
+        {
+          "name": "Shonee",
+          "castawayId": "AU0068",
+          "count": 1,
+          "correctCount": 0
+        }
+      ],
+      "totalGuesses": 33
+    },
+    "2,2": {
+      "topAnswers": [
+        {
+          "name": "Savannah",
+          "castawayId": "US0747",
+          "count": 13,
+          "correctCount": 0
+        },
+        {
+          "name": "Noelle",
+          "castawayId": "US0641",
+          "count": 4,
+          "correctCount": 0
+        },
+        {
+          "name": "Tai",
+          "castawayId": "US0476",
+          "count": 3,
+          "correctCount": 3
+        },
+        {
+          "name": "Cody",
+          "castawayId": "US0628",
+          "count": 2,
+          "correctCount": 0
+        },
+        {
+          "name": "Kellyn",
+          "castawayId": "US0530",
+          "count": 2,
+          "correctCount": 0
+        },
+        {
+          "name": "Sarah Lacina",
+          "castawayId": "US0414",
+          "count": 2,
+          "correctCount": 0
+        },
+        {
+          "name": "Stephen Fishbach",
+          "castawayId": "US0280",
+          "count": 2,
+          "correctCount": 0
+        },
+        {
+          "name": "Benji",
+          "castawayId": "AU0064",
+          "count": 1,
+          "correctCount": 0
+        },
+        {
+          "name": "Boston Rob",
+          "castawayId": "US0055",
+          "count": 1,
+          "correctCount": 0
+        },
+        {
+          "name": "Dan Foley",
+          "castawayId": "US0455",
+          "count": 1,
+          "correctCount": 0
+        },
+        {
+          "name": "Debbie Wanner",
+          "castawayId": "US0470",
+          "count": 1,
+          "correctCount": 1
+        },
+        {
+          "name": "Julie Alley",
+          "castawayId": "US0672",
+          "count": 1,
+          "correctCount": 0
+        },
+        {
+          "name": "Lauren Rimmer",
+          "castawayId": "US0510",
+          "count": 1,
+          "correctCount": 0
+        },
+        {
+          "name": "Thomas",
+          "castawayId": "US0733",
+          "count": 1,
+          "correctCount": 0
+        },
+        {
+          "name": "Troyzan",
+          "castawayId": "US0364",
+          "count": 1,
+          "correctCount": 0
+        }
+      ],
+      "totalGuesses": 36
+    }
+  }
+}
