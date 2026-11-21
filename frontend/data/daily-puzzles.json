@@ -1,0 +1,236 @@
+{
+  "schemaVersion": "1",
+  "puzzles": [
+    {
+      "dateKey": "2026-11-20",
+      "rows": [
+        "placement_jury",
+        "immunity_career_2plus",
+        "confessionals_career_100plus"
+      ],
+      "cols": [
+        "season_US18",
+        "format_fans_vs_favorites",
+        "format_re_entry"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 164062038,
+        "difficultyPoints": 8,
+        "difficultyTarget": "6-9",
+        "status": "live",
+        "updatedAt": "2026-11-20T19:13:42.112Z"
+      }
+    },
+    {
+      "dateKey": "2026-11-21",
+      "rows": [
+        "placement_neverjury",
+        "season_US47",
+        "format_mix_of_new_and_returning_players"
+      ],
+      "cols": [
+        "fail_hidden_immunity_idol",
+        "votes_against_career_3plus",
+        "votes_against_career_8plus"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 3380914799,
+        "difficultyPoints": 8,
+        "difficultyTarget": "7-10",
+        "status": "scheduled",
+        "updatedAt": "2026-11-20T19:13:42.112Z"
+      }
+    },
+    {
+      "dateKey": "2026-11-22",
+      "rows": [
+        "status_returning",
+        "played_in_central_america",
+        "voting_no_tribals_before_merge"
+      ],
+      "cols": [
+        "played_in_philippines",
+        "votes_against_career_15plus",
+        "tribe_color_pink"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 2287462364,
+        "difficultyPoints": 10,
+        "difficultyTarget": "7-10",
+        "status": "scheduled",
+        "updatedAt": "2026-11-20T19:13:42.112Z"
+      }
+    },
+    {
+      "dateKey": "2026-11-23",
+      "rows": [
+        "season_US12",
+        "season_US29",
+        "confessionals_career_30plus"
+      ],
+      "cols": [
+        "immunity_1plus",
+        "votes_against_season_5plus",
+        "confessionals_season_20plus"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 1741530941,
+        "difficultyPoints": 11,
+        "difficultyTarget": "7-11",
+        "status": "scheduled",
+        "updatedAt": "2026-11-20T19:13:42.112Z"
+      }
+    },
+    {
+      "dateKey": "2026-11-24",
+      "rows": [
+        "format_battle_of_the_sexes",
+        "journey_lost_vote",
+        "age_played_in_40s"
+      ],
+      "cols": [
+        "confessionals_career_60plus",
+        "tribe_color_purple",
+        "auction_item_won"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 1193737882,
+        "difficultyPoints": 15,
+        "difficultyTarget": "12+",
+        "status": "scheduled",
+        "updatedAt": "2026-11-20T19:13:42.112Z"
+      }
+    },
+    {
+      "dateKey": "2026-11-25",
+      "rows": [
+        "placement_prejury",
+        "format_all_returning_players",
+        "status_one_time_player"
+      ],
+      "cols": [
+        "season_US49",
+        "played_in_cambodia",
+        "success_hidden_immunity_idol"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 489004435,
+        "difficultyPoints": 6,
+        "difficultyTarget": "6",
+        "status": "scheduled",
+        "updatedAt": "2026-11-20T19:13:42.112Z"
+      }
+    },
+    {
+      "dateKey": "2026-11-26",
+      "rows": [
+        "season_US27",
+        "format_blood_vs_water",
+        "played_inland"
+      ],
+      "cols": [
+        "placement_merge",
+        "format_all_new_players",
+        "juror_not_voted_winner"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 112997760,
+        "difficultyPoints": 7,
+        "difficultyTarget": "6-8",
+        "status": "scheduled",
+        "updatedAt": "2026-11-20T19:13:42.112Z"
+      }
+    },
+    {
+      "dateKey": "2026-11-27",
+      "rows": [
+        "placement_runner_up",
+        "immunity_season_4plus",
+        "confessional_highest_season"
+      ],
+      "cols": [
+        "played_in_samoa",
+        "used_hidden_immunity_idol",
+        "votes_against_season_4plus"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 882476641,
+        "difficultyPoints": 9,
+        "difficultyTarget": "6-9",
+        "status": "scheduled",
+        "updatedAt": "2026-11-20T19:13:42.112Z"
+      }
+    },
+    {
+      "dateKey": "2026-11-28",
+      "rows": [
+        "played_in_mainland_asia",
+        "played_in_palau",
+        "fail_shot_in_the_dark"
+      ],
+      "cols": [
+        "immunity_season_2plus",
+        "votes_against_career_10plus",
+        "confessionals_career_50plus"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 1755011662,
+        "difficultyPoints": 9,
+        "difficultyTarget": "7-10",
+        "status": "scheduled",
+        "updatedAt": "2026-11-20T19:13:42.112Z"
+      }
+    },
+    {
+      "dateKey": "2026-11-29",
+      "rows": [
+        "season_US44",
+        "season_US46",
+        "journey_gained_advantage"
+      ],
+      "cols": [
+        "placement_premerge",
+        "votes_against_career_5plus",
+        "juror_voted_winner"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 397474407,
+        "difficultyPoints": 9,
+        "difficultyTarget": "7-10",
+        "status": "scheduled",
+        "updatedAt": "2026-11-20T19:13:42.112Z"
+      }
+    },
+    {
+      "dateKey": "2026-11-30",
+      "rows": [
+        "played_in_brazil",
+        "held_shot_in_the_dark",
+        "fail_hidden_immunity_idol"
+      ],
+      "cols": [
+        "placement_neverjury",
+        "confessionals_season_30plus",
+        "tribe_color_green"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 807821293,
+        "difficultyPoints": 10,
+        "difficultyTarget": "7-11",
+        "status": "scheduled",
+        "updatedAt": "2026-11-20T19:13:42.112Z"
+      }
+    }
+  ]
+}
