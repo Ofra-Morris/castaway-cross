@@ -1,0 +1,236 @@
+{
+  "schemaVersion": "1",
+  "puzzles": [
+    {
+      "dateKey": "2026-11-27",
+      "rows": [
+        "placement_runner_up",
+        "immunity_season_4plus",
+        "confessional_highest_season"
+      ],
+      "cols": [
+        "played_in_samoa",
+        "used_hidden_immunity_idol",
+        "votes_against_season_4plus"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 882476641,
+        "difficultyPoints": 9,
+        "difficultyTarget": "6-9",
+        "status": "live",
+        "updatedAt": "2026-11-27T20:12:57.086Z"
+      }
+    },
+    {
+      "dateKey": "2026-11-28",
+      "rows": [
+        "played_in_mainland_asia",
+        "played_in_palau",
+        "fail_shot_in_the_dark"
+      ],
+      "cols": [
+        "immunity_season_2plus",
+        "votes_against_career_10plus",
+        "confessionals_career_50plus"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 1755011662,
+        "difficultyPoints": 9,
+        "difficultyTarget": "7-10",
+        "status": "scheduled",
+        "updatedAt": "2026-11-27T20:12:57.086Z"
+      }
+    },
+    {
+      "dateKey": "2026-11-29",
+      "rows": [
+        "season_US44",
+        "season_US46",
+        "journey_gained_advantage"
+      ],
+      "cols": [
+        "placement_premerge",
+        "votes_against_career_5plus",
+        "juror_voted_winner"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 397474407,
+        "difficultyPoints": 9,
+        "difficultyTarget": "7-10",
+        "status": "scheduled",
+        "updatedAt": "2026-11-27T20:12:57.086Z"
+      }
+    },
+    {
+      "dateKey": "2026-11-30",
+      "rows": [
+        "played_in_brazil",
+        "held_shot_in_the_dark",
+        "fail_hidden_immunity_idol"
+      ],
+      "cols": [
+        "placement_neverjury",
+        "confessionals_season_30plus",
+        "tribe_color_green"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 807821293,
+        "difficultyPoints": 10,
+        "difficultyTarget": "7-11",
+        "status": "scheduled",
+        "updatedAt": "2026-11-27T20:12:57.086Z"
+      }
+    },
+    {
+      "dateKey": "2026-12-01",
+      "rows": [
+        "immunity_1plus",
+        "season_US45",
+        "tribe_color_pink"
+      ],
+      "cols": [
+        "confessionals_career_40plus",
+        "tribe_color_red",
+        "age_played_in_30s"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 957983972,
+        "difficultyPoints": 14,
+        "difficultyTarget": "12+",
+        "status": "scheduled",
+        "updatedAt": "2026-11-27T20:12:57.086Z"
+      }
+    },
+    {
+      "dateKey": "2026-12-02",
+      "rows": [
+        "placement_ftc",
+        "placement_jury",
+        "season_US10"
+      ],
+      "cols": [
+        "immunity_season_0",
+        "immunity_career_2plus",
+        "played_in_central_america"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 906677591,
+        "difficultyPoints": 6,
+        "difficultyTarget": "6",
+        "status": "scheduled",
+        "updatedAt": "2026-11-27T20:12:57.086Z"
+      }
+    },
+    {
+      "dateKey": "2026-12-03",
+      "rows": [
+        "format_mix_of_new_and_returning_players",
+        "played_in_philippines",
+        "votes_against_season_5plus"
+      ],
+      "cols": [
+        "format_all_returning_players",
+        "played_in_fiji",
+        "status_one_time_player"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 1331345278,
+        "difficultyPoints": 7,
+        "difficultyTarget": "6-8",
+        "status": "scheduled",
+        "updatedAt": "2026-11-27T20:12:57.086Z"
+      }
+    },
+    {
+      "dateKey": "2026-12-04",
+      "rows": [
+        "placement_prejury",
+        "challenge_won_gross_food_challenge",
+        "tribe_color_purple"
+      ],
+      "cols": [
+        "status_played_three_plus_seasons",
+        "placement_merge",
+        "placement_winner"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 4167741897,
+        "difficultyPoints": 9,
+        "difficultyTarget": "6-9",
+        "status": "scheduled",
+        "updatedAt": "2026-11-27T20:12:57.086Z"
+      }
+    },
+    {
+      "dateKey": "2026-12-05",
+      "rows": [
+        "status_returning",
+        "challenge_participated_gross_food_challenge",
+        "votes_against_season_10plus"
+      ],
+      "cols": [
+        "immunity_season_3plus",
+        "used_hidden_immunity_idol",
+        "confessional_highest_season"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 1113962536,
+        "difficultyPoints": 10,
+        "difficultyTarget": "7-10",
+        "status": "scheduled",
+        "updatedAt": "2026-11-27T20:12:57.086Z"
+      }
+    },
+    {
+      "dateKey": "2026-12-06",
+      "rows": [
+        "played_in_nicaragua",
+        "juror_not_voted_winner",
+        "tribe_color_blue"
+      ],
+      "cols": [
+        "immunity_career_0",
+        "format_re_entry",
+        "held_hidden_immunity_idol"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 2682803035,
+        "difficultyPoints": 9,
+        "difficultyTarget": "7-10",
+        "status": "scheduled",
+        "updatedAt": "2026-11-27T20:12:57.086Z"
+      }
+    },
+    {
+      "dateKey": "2026-12-07",
+      "rows": [
+        "format_all_new_players",
+        "format_battle_of_the_sexes",
+        "votes_against_career_5plus"
+      ],
+      "cols": [
+        "immunity_season_2plus",
+        "confessionals_career_50plus",
+        "confessionals_career_60plus"
+      ],
+      "metadata": {
+        "source": "random-curation-seeded",
+        "seed": 170399970,
+        "difficultyPoints": 11,
+        "difficultyTarget": "7-11",
+        "status": "scheduled",
+        "updatedAt": "2026-11-27T20:12:57.086Z"
+      }
+    }
+  ]
+}
